@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/index.css';
+import 'line-awesome/dist/line-awesome/css/line-awesome.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
