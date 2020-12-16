@@ -1,0 +1,238 @@
+[{
+  "id": "1",  
+  "text": "Domains",
+    "href": "#",
+    "target": "_self",
+    "title": "Domains",
+    "children": [{
+        "name": "Register a Domain",
+        "description": "Book your domain here",
+        "href": "register-a-domain",
+        "title": "Register a Domain",
+        "icon": "las la-globe-asia"
+      },
+      {
+        "name": "New Domain Extentions",
+        "description": "Pre-register to get the name of your choice",
+        "href": "new-domain-extentions",
+        "title": "New Domain Extentions",
+        "icon": "las la-plus-square"
+      },
+      {
+        "name": "Name Suggestion Tool",
+        "description": "Use our name spinner for ideas on your ideal domain name.",
+        "href": "name-suggestion-tool",
+        "title": "Name Suggestion Tool",
+        "icon": "las la-circle-notch"
+      },
+      {
+        "name": "Whois Lookup",
+        "description": "Perform a Whois Lookup",
+        "href": "whois-lookup",
+        "title": "Whois Lookup",
+        "icon": "las la-globe-americas"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "text": "Hosting",
+    "href": "#",
+    "target": "_self",
+    "title": "Hosting",
+    "children": [{
+        "name": "Linux Shared Hosting",
+        "description": "Comes with cPanel, PHP, Apache and more",
+        "href": "linux-shared-hosting",
+        "title": "Linux Shared Hosting",
+        "icon": "lab la-linux"
+      },
+      {
+        "name": "Windows Shared Hosting",
+        "description": "Perfect for smaller websites, blogs. Comes with Plesk, ASP, IIS and more",
+        "href": "windows-shared-hosting",
+        "title": "Windows Shared Hosting",
+        "icon": "lab la-windows"
+      },
+      {
+        "name": "WordPress Hosting",
+        "description": "A secure,reliable and powerful platform crafted for WordPress",
+        "href": "wordpress-hosting",
+        "title": "WordPress Hosting",
+        "icon": "lab la-wordpress"
+      },
+      {
+        "name": "Drupal Hosting",
+        "description": "A secure, reliable and powerful platform crafted for Drupal",
+        "href": "drupal-hosting",
+        "title": "Drupal Hosting",
+        "icon": "lab la-wordpress"
+      },
+      {
+        "name": "Joomla Hosting",
+        "description": "A secure, reliable and powerful platform crafted for Joomla",
+        "href": "joomla-hosting",
+        "title": "Joomla Hosting",
+        "icon": "lab la-joomla"
+      },
+      {
+        "name": "Cloud Hosting",
+        "description": "Suitable for e-commerce website or heavy traffic website.",
+        "href": "cloud-hosting",
+        "title": "Cloud Hosting",
+        "icon": "las la-cloud"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "text": "VPS Server",
+    "href": "#",
+    "target": "_self",
+    "title": "VPS Server",
+    "children": [{
+      "name": "Linux VPS Server",
+      "description": "With KVM Hypervisor implementation for a cost effective dedicated server experience",
+      "href": "linux-vps-server",
+      "title": "Linux VPS Server",
+      "icon": "las la-terminal"
+    }]
+  },
+  {
+    "id": "4",
+    "text": "Cloud",
+    "href": "#",
+    "target": "_self",
+    "title": "Cloud Hosting"
+  },
+  {
+    "id": "5",
+    "text": "Servers",
+    "href": "#",
+    "target": "_self",
+    "title": "Servers",
+    "children": [{
+        "name": "Linux Dedicated Server",
+        "description": "Dedicated hardware and rock-solid performance; perfect for larger websites and apps",
+        "href": "linux-dedicated-server",
+        "title": "Linux Dedicated Server",
+        "icon": "las la-terminal"
+      },
+      {
+        "name": "Windows Dedicated Server",
+        "description": "Dedicated hardware and rock-solid performance; perfect for larger websites and apps",
+        "href": "windows-dedicated-server",
+        "title": "Windows Dedicated Server",
+        "icon": "lab la-windows"
+      },
+      {
+        "name": "Managed Servers",
+        "description": "Get the power of a dedicated server along with our in-house experts to help manage your server",
+        "href": "managed-servers",
+        "title": "Managed Servers",
+        "icon": "las la-user"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "text": "Emails",
+    "href": "#",
+    "target": "_self",
+    "title": "Emails",
+    "children": [{
+        "name": "Business Email",
+        "description": "Simple and powerful webmail.",
+        "href": "business-email",
+        "title": "Business Email",
+        "icon": "las la-envelope"
+      },
+      {
+        "name": "Enterprise Email",
+        "description": "Advanced and Corporate-class email.",
+        "href": "enterprise-email",
+        "title": "Enterprise Email",
+        "icon": "las la-mail-bulk"
+      },
+      {
+        "name": "G Suite",
+        "description": "Email, calendar and storage on any device",
+        "href": "g-suite",
+        "title": "G Suite",
+        "icon": "lab la-google"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "text": "Websites",
+    "href": "#",
+    "target": "_self",
+    "title": "Websites",
+    "children": [{
+        "name": "Weebly",
+        "description": "Build the beautiful website you have always imagined, without having to know code.",
+        "href": "weebly",
+        "title": "Weebly",
+        "icon": "lab la-weebly"
+      },
+      {
+        "name": "Website Builder",
+        "description": "Create your own website instantly, no coding\/design skills required. Choose from over 100 themes or simply drag-and-drop to customize your design",
+        "href": "website-builder",
+        "title": "Website Builder",
+        "icon": "las la-laptop-code"
+      },
+      {
+        "name": "Themes",
+        "description": "Enhance the look and feel of your website. Select from a wide range of themes and templates for the web's top CMS platforms.",
+        "href": "themes",
+        "title": "Themes",
+        "icon": "las la-palette"
+      },
+      {
+        "name": "Plugins",
+        "description": "Download plugins and scripts to add that extra functionality to your website",
+        "href": "plugins",
+        "title": "Plugins",
+        "icon": "las la-code"
+      },
+      {
+        "name": "Logos",
+        "description": "Logo design was never this easy. Choose a customizable template and design a professional looking logo in minutes",
+        "href": "logos",
+        "title": "Logos",
+        "icon": "las la-splotch"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "text": "Security & Backups",
+    "href": "#",
+    "target": "_self",
+    "title": "Security & Backups",
+    "children": [{
+        "name": "SSL Certificates",
+        "description": "Powerful encryption for your data.",
+        "href": "ssl-certificates",
+        "title": "SSL Certificates",
+        "icon": "las la-lock"
+      },
+      {
+        "name": "Sitelock",
+        "description": "Over 5000 websites get attacked everyday. Get SiteLock and secure your website from hackers, viruses and malware.",
+        "href": "sitelock",
+        "title": "Sitelock",
+        "icon": "las la-check-square"
+      },
+      {
+        "name": "Codeguard Website Backup",
+        "description": "Your data is precious. Secure your website in just a few minutes",
+        "href": "codeguard",
+        "title": "Codeguard Website Backup",
+        "icon": "las la-code"
+      }
+    ]
+  }
+]
