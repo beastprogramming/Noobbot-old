@@ -17,7 +17,7 @@ function TopMenu(){
                             title="Login or Sign up"
                             className="nb-ml-1 lg:nb-ml-3 nb-flex nb-items-center"
                             >
-                            <i className="las la-user la-2x"></i>{" "}
+                            <i className="las la-user la-2x"></i>
                             <span className="hidden lg:block">Sign In / Sign up</span>
                             </Link>
                         </li>
