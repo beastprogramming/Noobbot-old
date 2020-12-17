@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {BrowserRouter as Router,Link} from "react-router-dom";
 
 function MainMenu() {
+// Menu DropDown
 const [mainMenu, setMainMenu] = useState(false)
 const handleMainMenu = () => {setMainMenu(!mainMenu)}    
+// Fetching menuitems data
+const [menuItems, setMenuItems] = useState(null)
 
+useEffect(() => {
+    fetch(`./menu.json`)
+    .then((response) => response.json())
+    .then(setMenuItems)
+}, []);
     return(
         <>
         <div className="nb-main-menu nb-pl-2 xl:nb-pl-8 nb-pr-2 xl:nb-pr-0 xl:nb-block nb-hidden nb-shadow">
