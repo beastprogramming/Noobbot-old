@@ -3,7 +3,7 @@ import {BrowserRouter as Router,Link} from "react-router-dom";
 
 function TopMenu(){
     const [mobileMenu, setMobileMenu] = useState(false)
-    const handleClick = () => setMobileMenu(!mobileMenu)
+    const handleMobileMenu = () => {setMobileMenu(!mobileMenu)}
 
     return(
         <>
@@ -23,7 +23,7 @@ function TopMenu(){
                             className="nb-ml-1 lg:nb-ml-3 nb-flex nb-items-center"
                             >
                             <i className="las la-user la-2x"></i>
-                            <span className="hidden lg:block">Sign In / Sign up</span>
+                            <span className="nb-hidden lg:nb-block">Sign In / Sign up</span>
                             </Link>
                         </li>
                         <li className="">
@@ -33,8 +33,8 @@ function TopMenu(){
                             </i>
                             </Link>
                         </li>
-                        <div className="noobbot-mobile-menu nb-ml-8 xl:nb-hidden" onClick={handleClick}>
-                            <i className={handleClick ? 'las la-2x la-bars' : 'las la-2x la-times'}></i>
+                        <div className="noobbot-mobile-menu nb-ml-8 xl:nb-hidden nb-cursor-pointer" onClick={handleMobileMenu}>
+                            <i className={mobileMenu ? 'las la-2x la-times' : 'las la-2x la-bars'}></i>
                         </div>
                         </ul>
 
