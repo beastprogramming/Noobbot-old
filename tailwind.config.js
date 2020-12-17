@@ -1,4 +1,3 @@
-const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
@@ -7,14 +6,6 @@ module.exports = {
     prefix: 'nb-',
     important: true,
     theme: {
-        colors: {
-            gray: colors.blueGray,
-            green: colors.green,
-            blue: colors.blue,
-            yellow: colors.yellow,
-
-
-        },
         extend: {},
     },
     variants: {
@@ -23,28 +14,28 @@ module.exports = {
     plugins: [
         plugin(function({ addComponents }) {
             const buttons = {
-              '.btn': {
-                padding: '.5rem 1rem',
-                borderRadius: '.25rem',
-                fontWeight: '600',
-              },
-              '.btn-blue': {
-                backgroundColor: '#1d4ed8',
-                color: '#fff',
-                '&:hover': {
-                  backgroundColor: '#2779bd'
+                '.btn': {
+                    padding: '.5rem 1rem',
+                    borderRadius: '.25rem',
+                    fontWeight: '600',
                 },
-              },
-              '.btn-red': {
-                backgroundColor: '#e3342f',
-                color: '#fff',
-                '&:hover': {
-                  backgroundColor: '#cc1f1a'
+                '.btn-blue': {
+                    backgroundColor: '#1d4ed8',
+                    color: '#fff',
+                    '&:hover': {
+                        backgroundColor: '#2779bd'
+                    },
                 },
-              },
+                '.btn-red': {
+                    backgroundColor: '#e3342f',
+                    color: '#fff',
+                    '&:hover': {
+                        backgroundColor: '#cc1f1a'
+                    },
+                },
             }
-      
+
             addComponents(buttons)
-          })
+        })
     ],
 }

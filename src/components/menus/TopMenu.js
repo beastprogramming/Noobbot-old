@@ -1,5 +1,10 @@
+import React, { useState } from 'react';    
 import {BrowserRouter as Router,Link} from "react-router-dom";
+
 function TopMenu(){
+    const [mobileMenu, setMobileMenu] = useState(false)
+    const handleClick = () => setMobileMenu(!mobileMenu)
+
     return(
         <>
             <div className="nb-top-nav nb-flex nb-justify-between nb-items-center nb-border-b nb-border-gray-200">
@@ -28,8 +33,8 @@ function TopMenu(){
                             </i>
                             </Link>
                         </li>
-                        <div className="noobbot-mobile-menu nb-ml-8 xl:nb-hidden">
-                            <i className="las la-2x la-bars"></i>
+                        <div className="noobbot-mobile-menu nb-ml-8 xl:nb-hidden" onClick={handleClick}>
+                            <i className={handleClick ? 'las la-2x la-bars' : 'las la-2x la-times'}></i>
                         </div>
                         </ul>
 

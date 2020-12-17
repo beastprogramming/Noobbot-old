@@ -1,10 +1,10 @@
 import './css/App.css';
-import TopMenu from './components/menus/TopMenu';
+import Header from './components/menus/Header';
 
 function App() {
   return (
     <div className="App">
-      <TopMenu />
+      <Header />
     </div>
   );
 }
