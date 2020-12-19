@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, {useState,useEffect} from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function MainMenu() {
   // Menu DropDown
-  const [mainMenu, setMainMenu] = useState(false);
-  const handleMainMenu = () => {
-    setMainMenu(!mainMenu);
+  const handleMainMenu = (e) => {
+    let clickedItem = e.currentTarget;
+    clickedItem.querySelector(".nb-mega-menu").classList.toggle("nb-block");
+    clickedItem.querySelector(".nb-mega-menu").classList.toggle("nb-hidden");
   };
 
   // Fetching menuitems data
@@ -21,7 +22,8 @@ function MainMenu() {
       <div className="nb-main-menu nb-pl-2 xl:nb-pl-8 nb-pr-2 xl:nb-pr-0 xl:nb-block nb-hidden nb-shadow">
         <ul className="nb-flex nb-flex-col lg:nb-flex-row lg:nb-items-center lg:nb-justify-between nb-text-gray-800">
           <Router>
-            {menuItems.map((menuItem) => (
+            {menuItems.map((menuItem) => {
+              return (
               <li
                 key={menuItem.text}
                 className="nb-border-b lg:nb-border-b-0 nb-border-gray-300"
@@ -35,22 +37,14 @@ function MainMenu() {
                   {menuItem.text}
                   {menuItem.children ? (
                     <i
-                      className={
-                        menuItem.children && mainMenu
-                          ? "las la-angle-up nb-ml-1"
-                          : menuItem.children ?
-                          "las la-angle-down nb-ml-1"
-                          : null
-                      }
+                      className="las la-angle-down nb-ml-1"
                     ></i>
                   ) : (
                     ""
                   )}
                   {menuItem.children ? (
                     <div
-                      className={`nb-mega-menu nb-bg-white nb-absolute nb-left-0 nb-right-0 nb-p-4 nb-pl-2 xl:nb-pl-8 nb-mt-2 ${
-                        mainMenu ? "nb-block" : "nb-hidden"
-                      }`}
+                      className="nb-mega-menu nb-bg-white nb-absolute nb-left-0 nb-right-0 nb-p-4 nb-pl-2 xl:nb-pl-8 nb-mt-2 nb-hidden"
                     >
                       <div className="nb-w-full nb-grid nb-grid-col-1 lg:nb-grid-cols-4 nb-h-full nb-normal-case">
                         <div className="lg:nb-col-span-1 nb-bg-gray-200 nb-px-4 nb-py-8">
@@ -101,7 +95,7 @@ function MainMenu() {
                   )}
                 </div>
               </li>
-            ))}
+            )})}
           </Router>
         </ul>
       </div>
