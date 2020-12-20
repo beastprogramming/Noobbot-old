@@ -5,8 +5,13 @@ function MainMenu() {
   // Menu DropDown
   const handleMainMenu = (e) => {
     let clickedItem = e.currentTarget;
+    let previousClickedItem = e.target.id;
     clickedItem.querySelector(".nb-mega-menu").classList.toggle("nb-block");
     clickedItem.querySelector(".nb-mega-menu").classList.toggle("nb-hidden");
+    console.log("previous clicked : " + previousClickedItem);
+    console.log("current clicked : " + clickedItem);
+
+
   };
 
   // Fetching menuitems data
@@ -74,7 +79,7 @@ function MainMenu() {
                               className="nb-flex nb-justify-center nb-text-left nb-items-center nb-text-gray-800 hover:nb-text-gray-900"
                             >
                               <div className="nb-w-1-4">
-                                <i className={`${megaMenu.icon} la-3x`}></i>
+                                <i className={`${megaMenu.icon} la-3x`} ></i>
                               </div>
                               <div className="nb-w-3/4 nb-pl-2">
                                 <h2 className="nb-text-md nb-font-bold">
