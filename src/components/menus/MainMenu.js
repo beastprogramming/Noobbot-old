@@ -64,7 +64,7 @@ function MainMenu() {
                             {menuItem.children.map((megaMenu) => (
                               <Link
                                 key={megaMenu.name}
-                                to="#"
+                                to={megaMenu.href}
                                 title={megaMenu.title}
                                 className="nb-flex nb-justify-center nb-text-left nb-items-center nb-text-gray-800 hover:nb-text-gray-900"
                               >

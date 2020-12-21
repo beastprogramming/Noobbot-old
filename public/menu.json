@@ -8,7 +8,7 @@
 
                 "name": "Register a Domain",
                 "description": "Book your domain here",
-                "href": "register-a-domain",
+                "href": "/domains/register-a-domain",
                 "title": "Register a Domain",
                 "icon": "las la-globe-asia"
             },
@@ -16,7 +16,7 @@
 
                 "name": "New Domain Extentions",
                 "description": "Pre-register to get the name of your choice",
-                "href": "new-domain-extentions",
+                "href": "/domains/new-domain-extentions",
                 "title": "New Domain Extentions",
                 "icon": "las la-plus-square"
             },
@@ -24,7 +24,7 @@
 
                 "name": "Name Suggestion Tool",
                 "description": "Use our name spinner for ideas on your ideal domain name.",
-                "href": "name-suggestion-tool",
+                "href": "/domains/name-suggestion-tool",
                 "title": "Name Suggestion Tool",
                 "icon": "las la-circle-notch"
             },
@@ -32,7 +32,7 @@
 
                 "name": "Whois Lookup",
                 "description": "Perform a Whois Lookup",
-                "href": "whois-lookup",
+                "href": "/domains/whois-lookup",
                 "title": "Whois Lookup",
                 "icon": "las la-globe-americas"
             }
