@@ -16,11 +16,11 @@ function TopMenu() {
               src="./images/logoColored.svg"
               alt="Noobbot Logo"
             /> */}
-            Noobbot
+            
           </Link>
           <ul className="nb-capitalize nb-text-lg nb-font-medium nb-text-gray-900 lg:nb-px-2 nb-pl-2 nb-pr-1 nb-flex nb-items-center">
             <li className="nb-border-r nb-pr-1 lg:nb-pr-2">
-              <Link to="/home" title="Search">
+              <Link to="#" title="Search">
                 <i className="la la-search la-2x"></i>
               </Link>
             </li>

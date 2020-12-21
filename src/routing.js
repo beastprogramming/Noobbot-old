@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch,Redirect, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 // Import All Pages components
 import Header from './components/menus/Header';

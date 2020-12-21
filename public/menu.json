@@ -48,7 +48,7 @@
 
                 "name": "Linux Shared Hosting",
                 "description": "Comes with cPanel, PHP, Apache and more",
-                "href": "linux-shared-hosting",
+                "href": "/hosting/linux-shared-hosting",
                 "title": "Linux Shared Hosting",
                 "icon": "lab la-linux"
             },
@@ -56,7 +56,7 @@
 
                 "name": "Windows Shared Hosting",
                 "description": "Perfect for smaller websites, blogs. Comes with Plesk, ASP, IIS and more",
-                "href": "windows-shared-hosting",
+                "href": "/hosting/windows-shared-hosting",
                 "title": "Windows Shared Hosting",
                 "icon": "lab la-windows"
             },
@@ -64,7 +64,7 @@
 
                 "name": "WordPress Hosting",
                 "description": "A secure,reliable and powerful platform crafted for WordPress",
-                "href": "wordpress-hosting",
+                "href": "/hosting/wordpress-hosting",
                 "title": "WordPress Hosting",
                 "icon": "lab la-wordpress"
             },
@@ -72,7 +72,7 @@
 
                 "name": "Drupal Hosting",
                 "description": "A secure, reliable and powerful platform crafted for Drupal",
-                "href": "drupal-hosting",
+                "href": "/hosting/drupal-hosting",
                 "title": "Drupal Hosting",
                 "icon": "lab la-drupal"
             },
@@ -80,7 +80,7 @@
 
                 "name": "Joomla Hosting",
                 "description": "A secure, reliable and powerful platform crafted for Joomla",
-                "href": "joomla-hosting",
+                "href": "/hosting/joomla-hosting",
                 "title": "Joomla Hosting",
                 "icon": "lab la-joomla"
             },
@@ -88,7 +88,7 @@
 
                 "name": "Cloud Hosting",
                 "description": "Suitable for e-commerce website or heavy traffic website.",
-                "href": "cloud-hosting",
+                "href": "/hosting/cloud-hosting",
                 "title": "Cloud Hosting",
                 "icon": "las la-cloud"
             }
