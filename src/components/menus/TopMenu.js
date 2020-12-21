@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function TopMenu() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -10,7 +10,6 @@ function TopMenu() {
   return (
     <>
       <div className="nb-top-nav nb-flex nb-justify-between nb-items-center nb-border-b nb-border-gray-200">
-        <Router>
           <Link to="/" className="logo nb-px-2 lg:nb-px-8 nb-py-2 flex">
             <img
               className="nb-h-8"
@@ -20,7 +19,7 @@ function TopMenu() {
           </Link>
           <ul className="nb-capitalize nb-text-lg nb-font-medium nb-text-gray-900 lg:nb-px-2 nb-pl-2 nb-pr-1 nb-flex nb-items-center">
             <li className="nb-border-r nb-pr-1 lg:nb-pr-2">
-              <Link to="#" title="Search">
+              <Link to="/home" title="Search">
                 <i className="la la-search la-2x"></i>
               </Link>
             </li>
@@ -54,7 +53,6 @@ function TopMenu() {
               ></i>
             </div>
           </ul>
-        </Router>
       </div>
     </>
   );

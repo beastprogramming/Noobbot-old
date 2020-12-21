@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import React, {useState,useEffect} from "react";
+import { Link } from "react-router-dom";
 
 function MainMenu() {
   // Menu DropDown
@@ -22,8 +22,9 @@ function MainMenu() {
     <>
       <div className="nb-main-menu nb-pl-2 xl:nb-pl-8 nb-pr-2 xl:nb-pr-0 xl:nb-block nb-hidden nb-shadow">
         <ul className="nb-flex nb-flex-col lg:nb-flex-row lg:nb-items-center lg:nb-justify-between nb-text-gray-800">
-          <Router>
-            {menuItems.map((menuItem) => (
+
+            {menuItems.map((menuItem) => {
+              return (
               <li
                 key={menuItem.text}
                 className="nb-border-b lg:nb-border-b-0 nb-border-gray-300"
@@ -37,9 +38,7 @@ function MainMenu() {
                   {menuItem.text}
                   {menuItem.children ? (
                     <i className="las la-angle-down nb-ml-1"></i>
-                  ) : (
-                    ""
-                  )}
+                  ) : null}
                   {menuItem.children ? (
                     <div className="nb-mega-menu nb-bg-white nb-absolute nb-left-0 nb-right-0 nb-p-4 nb-pl-2 xl:nb-pl-8 nb-mt-2 nb-hidden">
                       <div className="nb-w-full nb-grid nb-grid-col-1 lg:nb-grid-cols-4 nb-h-full nb-normal-case">
@@ -89,8 +88,7 @@ function MainMenu() {
                   ) : null}
                 </div>
               </li>
-            ))}
-          </Router>
+            )})}
         </ul>
       </div>
     </>
