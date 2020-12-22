@@ -104,7 +104,7 @@
 
             "name": "Linux VPS Server",
             "description": "With KVM Hypervisor implementation for a cost effective dedicated server experience",
-            "href": "linux-vps-server",
+            "href": "/vps/linux-vps-server",
             "title": "Linux VPS Server",
             "icon": "las la-terminal"
         }]
@@ -112,7 +112,7 @@
     {
 
         "text": "Cloud",
-        "href": "#",
+        "href": "/cloud",
         "target": "_self",
         "title": "Cloud Hosting"
     },
@@ -126,7 +126,7 @@
 
                 "name": "Linux Dedicated Server",
                 "description": "Dedicated hardware and rock-solid performance; perfect for larger websites and apps",
-                "href": "linux-dedicated-server",
+                "href": "/servers/linux-dedicated-server",
                 "title": "Linux Dedicated Server",
                 "icon": "las la-terminal"
             },
@@ -134,7 +134,7 @@
 
                 "name": "Windows Dedicated Server",
                 "description": "Dedicated hardware and rock-solid performance; perfect for larger websites and apps",
-                "href": "windows-dedicated-server",
+                "href": "/servers/windows-dedicated-server",
                 "title": "Windows Dedicated Server",
                 "icon": "lab la-windows"
             },
@@ -142,7 +142,7 @@
 
                 "name": "Managed Servers",
                 "description": "Get the power of a dedicated server along with our in-house experts to help manage your server",
-                "href": "managed-servers",
+                "href": "/servers/managed-servers",
                 "title": "Managed Servers",
                 "icon": "las la-user"
             }

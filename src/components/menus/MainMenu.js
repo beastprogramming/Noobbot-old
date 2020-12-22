@@ -35,10 +35,12 @@ function MainMenu() {
                     menuItem.children ? "nb-is-mega-menu " : null
                   }nb-pr-2 nb-py-2 nb-text-md nb-capitalize nb-font-bold nb-cursor-pointer`}
                 >
+                  <Link to={menuItem.children ? "#" : menuItem.href}>
                   {menuItem.text}
                   {menuItem.children ? (
                     <i className="las la-angle-down nb-ml-1"></i>
                   ) : null}
+                   </Link>
                   {menuItem.children ? (
                     <div className="nb-mega-menu nb-bg-white nb-absolute nb-left-0 nb-right-0 nb-p-4 nb-pl-2 xl:nb-pl-8 nb-mt-2 nb-hidden">
                       <div className="nb-w-full nb-grid nb-grid-col-1 lg:nb-grid-cols-4 nb-h-full nb-normal-case">
@@ -86,7 +88,9 @@ function MainMenu() {
                       </div>
                     </div>
                   ) : null}
+                 
                 </div>
+              
               </li>
             )})}
         </ul>
