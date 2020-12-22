@@ -12,6 +12,10 @@ import {LinuxSharedHosting, WindowsSharedHosting, CloudHosting, DrupalHosting, J
 import {LinuxVpsServer} from './pages/vps/index'
 // Cloud
 import {Cloud} from './pages/cloud/index'
+// Servers
+import {LinuxDedicatedServer, WindowsDedicatedServer, ManagedServer} from './pages/servers/index';
+// Emails
+import {BusinessEmail, EnterpriseEmail, GoogleWorkspace} from './pages/emails/index';
 // Error
 import NotFound404 from './pages/NotFound404'
 // 13232
@@ -38,7 +42,13 @@ function Routing() {
 
                 <Route exact path="/cloud" component={Cloud} />
 
+                <Route exact path="/servers/linux-dedicated-server" component={LinuxDedicatedServer} />
+                <Route exact path="/servers/windows-dedicated-server" component={WindowsDedicatedServer} />
+                <Route exact path="/servers/managed-servers" component={ManagedServer} />
 
+                <Route exact path="/emails/business-email" component={BusinessEmail} />
+                <Route exact path="/emails/enterprise-email" component={EnterpriseEmail} />
+                <Route exact path="/emails/google-workspace" component={GoogleWorkspace} />
 
                 <Route path="*" component={NotFound404} />
             </Switch>

@@ -158,7 +158,7 @@
 
                 "name": "Business Email",
                 "description": "Simple and powerful webmail.",
-                "href": "business-email",
+                "href": "/emails/business-email",
                 "title": "Business Email",
                 "icon": "las la-envelope"
             },
@@ -166,16 +166,16 @@
 
                 "name": "Enterprise Email",
                 "description": "Advanced and Corporate-class email.",
-                "href": "enterprise-email",
+                "href": "/emails/enterprise-email",
                 "title": "Enterprise Email",
                 "icon": "las la-mail-bulk"
             },
             {
 
-                "name": "G Suite",
+                "name": "Google Workspace",
                 "description": "Email, calendar and storage on any device",
-                "href": "g-suite",
-                "title": "G Suite",
+                "href": "/emails/google-workspace",
+                "title": "Google Workspace",
                 "icon": "lab la-google"
             }
         ]
@@ -190,7 +190,7 @@
 
                 "name": "Weebly",
                 "description": "Build the beautiful website you have always imagined, without having to know code.",
-                "href": "weebly",
+                "href": "/websites/weebly",
                 "title": "Weebly",
                 "icon": "lab la-weebly"
             },
@@ -198,7 +198,7 @@
 
                 "name": "Website Builder",
                 "description": "Create your own website instantly, no coding/design skills required. Choose from over 100 themes or simply drag-and-drop to customize your design",
-                "href": "website-builder",
+                "href": "/websites/website-builder",
                 "title": "Website Builder",
                 "icon": "las la-laptop-code"
             },
@@ -206,7 +206,7 @@
 
                 "name": "Themes",
                 "description": "Enhance the look and feel of your website. Select from a wide range of themes and templates for the web's top CMS platforms.",
-                "href": "themes",
+                "href": "/websites/themes",
                 "title": "Themes",
                 "icon": "las la-palette"
             },
@@ -214,13 +214,13 @@
 
                 "name": "Plugins",
                 "description": "Download plugins and scripts to add that extra functionality to your website",
-                "href": "plugins",
+                "href": "/websites/plugins",
                 "title": "Plugins",
                 "icon": "las la-code"
             },
             {
 
-                "name": "Logos",
+                "name": "/websites/Logos",
                 "description": "Logo design was never this easy. Choose a customizable template and design a professional looking logo in minutes",
                 "href": "logos",
                 "title": "Logos",
@@ -238,7 +238,7 @@
 
                 "name": "SSL Certificates",
                 "description": "Powerful encryption for your data.",
-                "href": "ssl-certificates",
+                "href": "/security-backups/ssl-certificates",
                 "title": "SSL Certificates",
                 "icon": "las la-lock"
             },
@@ -246,7 +246,7 @@
 
                 "name": "Sitelock",
                 "description": "Over 5000 websites get attacked everyday. Get SiteLock and secure your website from hackers, viruses and malware.",
-                "href": "sitelock",
+                "href": "/security-backups/sitelock",
                 "title": "Sitelock",
                 "icon": "las la-check-square"
             },
@@ -254,7 +254,7 @@
 
                 "name": "Codeguard Website Backup",
                 "description": "Your data is precious. Secure your website in just a few minutes",
-                "href": "codeguard",
+                "href": "/security-backups/codeguard",
                 "title": "Codeguard Website Backup",
                 "icon": "las la-code"
             }
