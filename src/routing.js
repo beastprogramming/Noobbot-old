@@ -40,37 +40,37 @@ function Routing() {
             
             <Switch>
                 <Route exact path="/" component={App} />
-
+                {/* Main Domains  */}
                 <Route exact path="/domains/register-a-domain" component={RegisterADomain} />
                 <Route exact path="/domains/new-domain-extentions" component={NewDomainExtension} />
                 <Route exact path="/domains/name-suggestion-tool" component={NameSuggestionTool} />
                 <Route exact path="/domains/whois-lookup" component={WhoisLookup} />
-
+                {/* Main Hosting  */}
                 <Route exact path="/hosting/linux-shared-hosting" component={LinuxSharedHosting} />
                 <Route exact path="/hosting/windows-shared-hosting" component={WindowsSharedHosting} />
                 <Route exact path="/hosting/cloud-hosting" component={CloudHosting} />
                 <Route exact path="/hosting/drupal-hosting" component={DrupalHosting} />
                 <Route exact path="/hosting/joomla-hosting" component={JoomlaHosting} />
                 <Route exact path="/hosting/wordpress-hosting" component={WordpressHosting} />
-
+                {/* Main VPS  */}
                 <Route exact path="/vps/linux-vps-server" component={LinuxVpsServer} />
-
+                {/* Main Cloud  */}
                 <Route exact path="/cloud" component={Cloud} />
-
+                {/* Main Servers  */}
                 <Route exact path="/servers/linux-dedicated-server" component={LinuxDedicatedServer} />
                 <Route exact path="/servers/windows-dedicated-server" component={WindowsDedicatedServer} />
                 <Route exact path="/servers/managed-servers" component={ManagedServer} />
-
+                {/* Main Emails  */}
                 <Route exact path="/emails/business-email" component={BusinessEmail} />
                 <Route exact path="/emails/enterprise-email" component={EnterpriseEmail} />
                 <Route exact path="/emails/google-workspace" component={GoogleWorkspace} />
-
+                {/* Main Websites  */}
                 <Route exact path="/websites/weebly" component={Weebly} />
                 <Route exact path="/websites/website-builder" component={WebsiteBuilder} />
                 <Route exact path="/websites/themes" component={Themes} />
                 <Route exact path="/websites/plugins" component={Plugins} />
                 <Route exact path="/websites/logos" component={Logos} />
-
+                {/* Main Security & Backups */}
                 <Route exact path="/security-backups/ssl-certificates" component={SSLCertificates} />
                 <Route exact path="/security-backups/sitelock" component={Sitelock} />
                 <Route exact path="/security-backups/codeguard" component={Codeguard} />
