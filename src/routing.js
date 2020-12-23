@@ -3,15 +3,17 @@ import { Switch, Route } from 'react-router-dom';
 
 // Import All Pages components
 import Header from './components/menus/Header';
-import App from './App'
+import Footer from './components/menus/Footer';
+
+import App from './App';
 // Domains
 import {RegisterADomain, NewDomainExtension, NameSuggestionTool, WhoisLookup} from './pages/domains/index';
 // Hosting
 import {LinuxSharedHosting, WindowsSharedHosting, CloudHosting, DrupalHosting, JoomlaHosting, WordpressHosting} from './pages/hosting/index';
 // VPS
-import {LinuxVpsServer} from './pages/vps/index'
+import {LinuxVpsServer} from './pages/vps/index';
 // Cloud
-import {Cloud} from './pages/cloud/index'
+import {Cloud} from './pages/cloud/index';
 // Servers
 import {LinuxDedicatedServer, WindowsDedicatedServer, ManagedServer} from './pages/servers/index';
 // Emails
@@ -21,12 +23,12 @@ import {Weebly, WebsiteBuilder, Themes, Plugins, Logos} from './pages/websites/i
 // Security & backups
 import {SSLCertificates, Sitelock, Codeguard} from './pages/security-backups/index';
 // Error
-import NotFound404 from './pages/NotFound404'
-// 13232
+import NotFound404 from './pages/NotFound404';
 function Routing() {
     return (
         <>
             <Header />
+            
             <Switch>
                 <Route exact path="/" component={App} />
 
@@ -66,6 +68,10 @@ function Routing() {
 
                 <Route path="*" component={NotFound404} />
             </Switch>
+            <div className="nb-h-64"></div>
+            <div className="nb-h-64"></div>
+            <div className="nb-h-64"></div>
+            <Footer />
         </>
     );
 }
