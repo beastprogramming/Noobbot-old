@@ -22,6 +22,15 @@ import {BusinessEmail, EnterpriseEmail, GoogleWorkspace} from './pages/emails/in
 import {Weebly, WebsiteBuilder, Themes, Plugins, Logos} from './pages/websites/index';
 // Security & backups
 import {SSLCertificates, Sitelock, Codeguard} from './pages/security-backups/index';
+// Footer Menu Company
+import {About, OurTeam, Resources, Stories, MediaKit, Legals} from './pages/footer/company/index';
+// Footer Menu Support
+import {Knowledgebase, VideoTutorials, LiveChatSupport, Blog, ContactUs, ReportAbuse} from './pages/footer/support/index';
+// Footer Menu Infrastructure
+import {DatacenterDetails, HostingSecurity, ServerMonitoring, BackupRecovery} from './pages/footer/infrastructure/index';
+// Footer Menu Solution
+import {Domains, Hosting, Emails, Websites, Security} from './pages/footer/solutions/index';
+
 // Error
 import NotFound404 from './pages/NotFound404';
 function Routing() {
@@ -66,11 +75,41 @@ function Routing() {
                 <Route exact path="/security-backups/sitelock" component={Sitelock} />
                 <Route exact path="/security-backups/codeguard" component={Codeguard} />
 
+                {/* Footer Company  */}
+                <Route exact path="/about" component={About} />
+                <Route exact path="/our-team" component={OurTeam} />
+                <Route exact path="/resources" component={Resources} />
+                <Route exact path="/stories" component={Stories} />
+                <Route exact path="/media-kit" component={MediaKit} />
+                <Route exact path="/legals" component={Legals} />
+                {/* Footer Infrastructure  */}
+                <Route exact path="/datacenter-details" component={DatacenterDetails} />
+                <Route exact path="/hosting-security" component={HostingSecurity} />
+                <Route exact path="/server-monitoring" component={ServerMonitoring} />
+                <Route exact path="/backup-recovery" component={BackupRecovery} />
+                {/* Footer Support*/}
+                <Route exact path="/knowledgebase" component={Knowledgebase} />
+                <Route exact path="/video-tutorials" component={VideoTutorials} />
+                <Route exact path="/live-chat-support" component={LiveChatSupport} />
+                <Route exact path="/blog" component={Blog} />
+                <Route exact path="/contact-us" component={ContactUs} />
+                <Route exact path="/report-abuse" component={ReportAbuse} />
+                {/* Footer QuickLinks*/}
+
+                {/* Footer Solutions*/}
+                <Route exact path="/domains" component={Domains} />
+                <Route exact path="/hosting" component={Hosting} />
+                <Route exact path="/websites" component={Websites} />
+                <Route exact path="/cloud" component={CloudHosting} />
+                <Route exact path="/emails" component={Emails} />
+                <Route exact path="/security-backups" component={Security} />
+                
+
                 <Route path="*" component={NotFound404} />
             </Switch>
+            {/* <div className="nb-h-64"></div>
             <div className="nb-h-64"></div>
-            <div className="nb-h-64"></div>
-            <div className="nb-h-64"></div>
+            <div className="nb-h-64"></div> */}
             <Footer />
         </>
     );
