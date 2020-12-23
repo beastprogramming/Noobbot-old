@@ -16,6 +16,10 @@ import {Cloud} from './pages/cloud/index'
 import {LinuxDedicatedServer, WindowsDedicatedServer, ManagedServer} from './pages/servers/index';
 // Emails
 import {BusinessEmail, EnterpriseEmail, GoogleWorkspace} from './pages/emails/index';
+// Websites
+import {Weebly, WebsiteBuilder, Themes, Plugins, Logos} from './pages/websites/index';
+// Security & backups
+import {SSLCertificates, Sitelock, Codeguard} from './pages/security-backups/index';
 // Error
 import NotFound404 from './pages/NotFound404'
 // 13232
@@ -49,6 +53,16 @@ function Routing() {
                 <Route exact path="/emails/business-email" component={BusinessEmail} />
                 <Route exact path="/emails/enterprise-email" component={EnterpriseEmail} />
                 <Route exact path="/emails/google-workspace" component={GoogleWorkspace} />
+
+                <Route exact path="/websites/weebly" component={Weebly} />
+                <Route exact path="/websites/website-builder" component={WebsiteBuilder} />
+                <Route exact path="/websites/themes" component={Themes} />
+                <Route exact path="/websites/plugins" component={Plugins} />
+                <Route exact path="/websites/logos" component={Logos} />
+
+                <Route exact path="/security-backups/ssl-certificates" component={SSLCertificates} />
+                <Route exact path="/security-backups/sitelock" component={Sitelock} />
+                <Route exact path="/security-backups/codeguard" component={Codeguard} />
 
                 <Route path="*" component={NotFound404} />
             </Switch>

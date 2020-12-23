@@ -17,7 +17,7 @@ function MainMenu() {
     fetch(`./menu.json`)
       .then((response) => response.json())
       .then(setMenuItems);
-  }, []);
+  }, [menuItems]);
   return (
     <>
       <div className="nb-main-menu nb-pl-2 xl:nb-pl-8 nb-pr-2 xl:nb-pr-0 xl:nb-block nb-hidden nb-shadow">
@@ -71,7 +71,7 @@ function MainMenu() {
                                 className="nb-flex nb-justify-center nb-text-left nb-items-center nb-text-gray-800 hover:nb-text-gray-900"
                               >
                                 <div className="nb-w-1-4">
-                                  <i className={`${megaMenu.icon} la-3x`}></i>
+                                  <i className={`${megaMenu.icon} la-3x nb-font-thin`}></i>
                                 </div>
                                 <div className="nb-w-3/4 nb-pl-2">
                                   <h2 className="nb-text-md nb-font-bold">
