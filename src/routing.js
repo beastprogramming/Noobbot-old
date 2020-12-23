@@ -107,9 +107,6 @@ function Routing() {
 
                 <Route path="*" component={NotFound404} />
             </Switch>
-            {/* <div className="nb-h-64"></div>
-            <div className="nb-h-64"></div>
-            <div className="nb-h-64"></div> */}
             <Footer />
         </>
     );
