@@ -1,0 +1,174 @@
+[{
+        "name": "Company",
+        "children": [{
+                "text": "About",
+                "title": "Know About Noobbot.",
+                "href": "/about",
+                "target": "_self"
+            },
+            {
+                "text": "Our Team",
+                "title": "Know About Our Team.",
+                "href": "",
+                "target": "_self"
+            },
+            {
+                "text": "Resources",
+                "title": "Browse Our Resources.",
+                "href": "/resources",
+                "target": "_self"
+            },
+            {
+                "text": "Stories",
+                "title": "See what our customers are saying about Noobbot.",
+                "href": "/stories",
+                "target": "_self"
+            },
+            {
+                "text": "Media Kit",
+                "title": "Download Noobbot Media Kit.",
+                "href": "/media-kit",
+                "target": "_self"
+            },
+            {
+                "text": "Legals",
+                "title": "Read Our Terms and Conditions / Privacy Policy",
+                "href": "/legals",
+                "target": "_self"
+            }
+        ]
+
+    },
+    {
+        "name": "Infrastructure",
+        "children": [{
+                "text": "Datacenter Details",
+                "title": "Datacenter Details",
+                "href": "/datacenter-details",
+                "target": "_self"
+            },
+            {
+                "text": "Hosting Security",
+                "title": "Hosting Security",
+                "href": "/hosting-security",
+                "target": "_self"
+            },
+            {
+                "text": "24 X 7 Servers Monitoring",
+                "title": "24 X 7 Servers Monitoring",
+                "href": "/server-monitoring",
+                "target": "_self"
+            },
+            {
+                "text": "Backup And Recovery",
+                "title": "Backup And Recovery",
+                "href": "/backup-recovery",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "name": "Support",
+        "children": [{
+                "text": "Knowledgebase",
+                "title": "Find Your Answers.",
+                "href": "/knowledgebase",
+                "target": "_self"
+            },
+            {
+                "text": "Video Tutorials",
+                "title": "Video Tutorials",
+                "href": "/video-tutorials",
+                "target": "_self"
+            },
+            {
+                "text": "Live Chat Support",
+                "title": "Live Chat Support",
+                "href": "/live-chat-support",
+                "target": "_self"
+            },
+            {
+                "text": "Noobbot Blog",
+                "title": "Noobbot Blog",
+                "href": "/blog",
+                "target": "_self"
+            },
+            {
+                "text": "Contact Us",
+                "title": "Contact Us",
+                "href": "/contact-us",
+                "target": "_self"
+            },
+            {
+                "text": "Report Abuse",
+                "title": "Report Abuse",
+                "href": "/report-abuse",
+                "target": "_self"
+            }
+        ]
+
+    },
+    {
+        "name": "Quick Links",
+        "children": [{
+                "text": "My Account",
+                "title": "My Account",
+                "href": "/my-account",
+                "target": "_self"
+            },
+            {
+                "text": "Create Account",
+                "title": "Create Account",
+                "href": "/create-account",
+                "target": "_self"
+            },
+            {
+                "text": "Offers",
+                "title": "Offers",
+                "href": "/offers",
+                "target": "_self"
+            }
+        ]
+    },
+    {
+        "name": "Solutions",
+        "children": [{
+                "text": "Domains",
+                "title": "Domains",
+                "href": "/domains",
+                "target": "_self"
+            },
+            {
+                "text": "Hosting",
+                "title": "Hosting",
+                "href": "/hosting",
+                "target": "_self"
+            },
+            {
+                "text": "Websites",
+                "title": "Websites",
+                "href": "/websites",
+                "target": "_self"
+            },
+            {
+                "text": "Cloud",
+                "title": "Cloud",
+                "href": "/cloud",
+                "target": "_self"
+            },
+            {
+                "text": "Emails",
+                "title": "Emails",
+                "href": "/emails",
+                "target": "_self"
+            },
+            {
+                "text": "Security",
+                "title": "Security",
+                "href": "/security-backups",
+                "target": "_self"
+            }
+        ]
+
+    }
+]
