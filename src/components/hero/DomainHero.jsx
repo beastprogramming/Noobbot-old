@@ -14,7 +14,7 @@ function DomainHero() {
                     <form className="nb-w-full nb-flex nb-flex-col md:nb-flex-row md:nb-items-center" action="" method="">
                         <input
                             className="nb-rounded-l nb-w-full nb-h-16 nb-border-primary-blue focus:nb-border-primary-blue focus:nb-outline-0 nb-border-2 nb-border-r-2 md:nb-border-r-0 nb-p-2 nb-bg-transparent focus:nb-bg-transparent nb-text-primary-bunty nb-text-xl nb-mb-2 md:nb-mb-0"
-                            type="text" name="domain" nb-placeholder="Find your ideal domain name." autocomnb-plete="off" />
+                            type="text" name="domain" placeholder="Find your ideal domain name." autocomplete="off" />
                         <input
                             className="nb-rounded-r nb-h-16 nb-border-primary-blue nb-border-2 nb-p-2 nb-text-xl nb-font-bold nb-bg-primary-blue nb-text-white nb-cursor-pointer"
                             type="submit" value="Find Domain" />
@@ -24,17 +24,17 @@ function DomainHero() {
                 <div className="nb-flex nb-flex-col md:nb-flex-row md:justify-between nb-mb-4">
                     <div className="nb-mb-2">
                         <div className="nb-flex nb-items-center ">
-                            <p className="nb-text-2xl md:nb-text-3xl lg:nb-text-4xl nb-font-bold nb-text-primary-red nb-mr-4">Get</p>
-                            <p className="nb-text-lg md:nb-text-xl lg:nb-text-2xl nb-font-bold nb-text-primary-bunty nb-mr-2">Domain</p>
+                            <p className="nb-text-lg md:nb-text-xl lg:nb-text-2xl nb-font-bold nb-text-primary-bunty nb-mr-2">Get Domain</p>
                             <span className="nb-text-xl md:nb-text-2xl lg:nb-text-3xl nb-font-bold nb-text-primary-red nb-mr-2">+</span>
                             <p className="nb-text-lg md:nb-text-xl lg:nb-text-2xl nb-font-bold nb-text-primary-bunty nb-mr-2">5 Page Website</p>
                         </div>
                         <p className="nb-text-sm lg:nb-text-lg nb-font-medium nb-text-primary-bunty nb-leading-tight ">Starting @<span className="nb-text-primary-blue nb-pl-2 nb-font-bold">₹ 190.80/mo</span></p>
-
                     </div>
-                    <Link to="#"
-                        className="nb-h-12 nb-rounded nb-border-primary-red nb-border-2 nb-p-2 nb-text-xl nb-font-bold nb-bg-primary-red nb-text-white nb-cursor-pointer">Get
-                        Started</Link>
+                    <Link to="#" title="Grab this combo offer." target="_self">
+                        <div className="nb-h-12 nb-rounded nb-border-primary-red nb-border-2 nb-p-2 nb-text-xl nb-font-bold nb-bg-primary-red nb-text-white nb-cursor-pointer">
+                        Get Started
+                        </div>
+                    </Link>
                 </div>
                 
             </div>
