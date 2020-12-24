@@ -16,10 +16,10 @@ fetch(`./footermenu.json`)
 						{menuItems.map((menuItem) => {
 						return (
 						<div key={menuItem.text}>
-							<p className="nb-uppercase nb-text-xs nb-tracking-widest nb-pb-2 lg:nb-pb-4 nb-font-bold nb-text-white">{menuItem.name}</p>
+							<p className="nb-uppercase nb-text-sm nb-tracking-widest nb-pb-2 lg:nb-pb-4 nb-font-bold nb-text-white">{menuItem.name}</p>
 							<ul className="">
-							{menuItem.children.map((megaMenu) => (
-								<li className="nb-text-sm nb-font-bold nb-capitalize hover:nb-text-white hover:nb-text-opacity-75"><Link to={megaMenu.href} title={megaMenu.title} target={megaMenu.target}>{megaMenu.text}</Link></li>
+							{menuItem.children.map((menuDetail) => (
+								<li className="nb-text-md nb-font-medium nb-capitalize hover:nb-text-gray-400" key={menuDetail.text}><Link to={menuDetail.href} title={menuDetail.title} target={menuDetail.target}>{menuDetail.text}</Link></li>
 							))}
 							</ul>
 						</div>

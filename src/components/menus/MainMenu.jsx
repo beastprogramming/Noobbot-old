@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 function MainMenu() {
   // Menu DropDown
-  // const [mainMenu, setMainMenu] = useState(false);
   const handleMainMenu = (e) => {
     let clickedItem = e.currentTarget;
     clickedItem.querySelector(".nb-mega-menu").classList.toggle("nb-block");
@@ -68,13 +67,13 @@ function MainMenu() {
                                 key={megaMenu.name}
                                 to={megaMenu.href}
                                 title={megaMenu.title}
-                                className="nb-flex nb-justify-center nb-text-left nb-items-center nb-text-gray-800 hover:nb-text-gray-900"
+                                className="nb-flex nb-justify-center nb-text-left nb-items-center nb-text-gray-800 group"
                               >
-                                <div className="nb-w-1-4">
-                                  <i className={`${megaMenu.icon} la-3x nb-font-thin`}></i>
+                                <div className="nb-w-1-4 nb-font-thin group-hover:nb-text-primary-blue">
+                                  <i className={`${megaMenu.icon} la-3x`}></i>
                                 </div>
                                 <div className="nb-w-3/4 nb-pl-2">
-                                  <h2 className="nb-text-md nb-font-bold">
+                                  <h2 className="nb-text-md nb-font-bold group-hover:nb-text-primary-blue">
                                     {megaMenu.name}
                                   </h2>
                                   <p className="nb-text-sm nb-font-medium nb-opacity-75">
