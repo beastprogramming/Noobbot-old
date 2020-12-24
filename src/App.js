@@ -1,7 +1,10 @@
+import React from 'react';
+import DomainHero from './components/hero/DomainHero';
+
 function App() {
   return (
     <div className="App">
-      <h1>Home</h1>
+      <DomainHero />
     </div>
   );
 }

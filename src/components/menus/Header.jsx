@@ -4,7 +4,7 @@ import MainMenu from "./MainMenu";
 function Header() {
     return (
         <>
-        <header>
+        <header className="nb-sticky nb-top-0 nb-z-10 nb-bg-white">
             <TopMenu />
             <MainMenu />
         </header>

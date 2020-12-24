@@ -2,25 +2,27 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
 function FooterMenu () {
-	const [menuItems, setMenuItems] = useState([]);
+	const [footerMenuItems, setFooterMenuItems] = useState([]);
 
 useEffect(() => {
 fetch(`./footermenu.json`)
 	.then((response) => response.json())
-	.then(setMenuItems);
-}, [menuItems]);
+	.then(setFooterMenuItems);
+}, [footerMenuItems]);
     return (
         <>
         <div className="nb-px-4 md:nb-px-8 lg:nb-px-12 nb-pt-8 nb-pb-4 nb-text-white ">
         	<div className="nb-grid nb-grid-cols-1 sm:nb-grid-cols-2 lg:nb-grid-cols-6 nb-gap-4">
-						{menuItems.map((menuItem) => {
+						{footerMenuItems.map((footerMenuItem) => {
 						return (
-						<div key={menuItem.text}>
-							<p className="nb-uppercase nb-text-sm nb-tracking-widest nb-pb-2 lg:nb-pb-4 nb-font-bold nb-text-white">{menuItem.name}</p>
+						<div key={footerMenuItem.text}>
+							<p className="nb-uppercase nb-text-sm nb-tracking-widest nb-pb-2 lg:nb-pb-4 nb-font-bold nb-text-white">{footerMenuItem.name}</p>
 							<ul className="">
-							{menuItem.children.map((menuDetail) => (
-								<li className="nb-text-md nb-font-medium nb-capitalize hover:nb-text-gray-400" key={menuDetail.text}><Link to={menuDetail.href} title={menuDetail.title} target={menuDetail.target}>{menuDetail.text}</Link></li>
-							))}
+							{footerMenuItem.children.map((footerMenuDetail) => {
+								return (
+									<li className="nb-text-md nb-font-medium nb-capitalize hover:nb-text-gray-400" key={footerMenuDetail.text}><Link to={footerMenuDetail.href} title={footerMenuDetail.title} target={footerMenuDetail.target}>{footerMenuDetail.text}</Link></li>
+								)})}
+							
 							</ul>
 						</div>
 						)})}
