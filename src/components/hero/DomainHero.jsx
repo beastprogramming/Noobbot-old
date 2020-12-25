@@ -14,7 +14,7 @@ function DomainHero() {
                     <form className="nb-w-full nb-flex nb-flex-col md:nb-flex-row md:nb-items-center" action="" method="">
                         <input
                             className="nb-rounded-l nb-w-full nb-h-16 nb-border-primary-blue focus:nb-border-primary-blue focus:nb-outline-0 nb-border-2 nb-border-r-2 md:nb-border-r-0 nb-p-2 nb-bg-transparent focus:nb-bg-transparent nb-text-primary-bunty nb-text-xl nb-mb-2 md:nb-mb-0"
-                            type="text" name="domain" placeholder="Find your ideal domain name." autocomplete="off" />
+                            type="text" name="domain" placeholder="Find your ideal domain name." autoComplete="off" />
                         <input
                             className="nb-rounded-r nb-h-16 nb-border-primary-blue nb-border-2 nb-p-2 nb-text-xl nb-font-bold nb-bg-primary-blue nb-text-white nb-cursor-pointer"
                             type="submit" value="Find Domain" />

@@ -16,7 +16,7 @@ function MainMenu() {
     fetch(`./mainmenu.json`)
       .then((response) => response.json())
       .then(setMenuItems);
-  }, [menuItems]);
+  }, []);
   return (
     <>
       <div className="nb-main-menu nb-pl-2 xl:nb-pl-8 nb-pr-2 xl:nb-pr-0 xl:nb-block nb-hidden nb-shadow">

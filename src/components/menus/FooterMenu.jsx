@@ -8,14 +8,14 @@ useEffect(() => {
 fetch(`./footermenu.json`)
 	.then((response) => response.json())
 	.then(setFooterMenuItems);
-}, [footerMenuItems]);
+}, []);
     return (
         <>
         <div className="nb-px-4 md:nb-px-8 lg:nb-px-12 nb-pt-8 nb-pb-4 nb-text-white ">
         	<div className="nb-grid nb-grid-cols-1 sm:nb-grid-cols-2 lg:nb-grid-cols-6 nb-gap-4">
 						{footerMenuItems.map((footerMenuItem) => {
 						return (
-						<div key={footerMenuItem.text}>
+						<div key={footerMenuItem.name}>
 							<p className="nb-uppercase nb-text-sm nb-tracking-widest nb-pb-2 lg:nb-pb-4 nb-font-bold nb-text-white">{footerMenuItem.name}</p>
 							<ul className="">
 							{footerMenuItem.children.map((footerMenuDetail) => {
@@ -33,7 +33,7 @@ fetch(`./footermenu.json`)
 								<div className="">
 								<Link to="https://www.sitelock.com/verify.php?site=noobbot.com"><img
 									className="img-responsive" alt="SiteLock" title="SiteLock"
-									src="//shield.sitelock.com/shield/noobbot.com" /></Link>
+									src="https://shield.sitelock.com/shield/noobbot.com" /></Link>
 								</div>
 								<div className="">
 

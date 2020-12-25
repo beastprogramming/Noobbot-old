@@ -4,9 +4,9 @@ function FooterNewsletter() {
     return (
         <>
         <div className="nb-bg-primary-bunty nb-text-primary-bunty">
-            <div className="nb-bg-primary-bunty nb-text-white nb-px-6 md:nb-px-12 lg:nb-px-20 nb-py-8 nb-bg-cover "
+            <div className="nb-bg-primary-bunty nb-text-white nb-px-6 md:nb-px-12 lg:nb-px-20 nb-py-8 nb-bg-contain "
             style={{backgroundImage: "url('https://www.lindholmen.se/sites/all/themes/lindholmen_v2/lindholmen_v2_lindholmen/images/footer-bg.svg')"}}>
-            <div className="nb-flex nb-flex-col lg:nb-flex-row lg:nb-justify-between lg:nb-items-center">
+            <div className="nb-flex nb-flex-col lg:nb-flex-row lg:nb-justify-between lg:nb-items-center" >
                 <div className="nb-block sm:nb-flex md:nb-block">
                 <h2 className="nb-text-2xl md:nb-text-3xl lg:nb-text-4xl nb-font-bold nb-text-white nb-mr-2">Get inside the hustle.</h2>
                 <h2 className="nb-text-2xl md:nb-text-3xl lg:nb-text-4xl nb-font-bold">Join the community.</h2>
