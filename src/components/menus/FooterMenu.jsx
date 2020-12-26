@@ -27,7 +27,7 @@ fetch(`./footermenu.json`)
 						</div>
 						)})}
 						<div className="">
-							<p className="nb-uppercase nb-text-xs nb-tracking-widest nb-pb-2 lg:nb-pb-4 nb-font-bold nb-text-white">Scanned & Secured By</p>
+							<p className="nb-uppercase nb-text-sm nb-tracking-widest nb-pb-2 lg:nb-pb-4 nb-font-bold nb-text-white">Scanned & Secured By</p>
 
 							<div className="nb-grid nb-grid-cols-1 lg:nb-grid-cols-2 nb-gap-2 ">
 								<div className="">
