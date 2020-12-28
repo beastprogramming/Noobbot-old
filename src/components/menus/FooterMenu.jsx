@@ -20,7 +20,9 @@ fetch(`./footermenu.json`)
 							<ul className="">
 							{footerMenuItem.children.map((footerMenuDetail) => {
 								return (
-									<li className="nb-text-md nb-font-medium nb-capitalize hover:nb-text-gray-400" key={footerMenuDetail.text}><Link to={footerMenuDetail.href} title={footerMenuDetail.title} target={footerMenuDetail.target}>{footerMenuDetail.text}</Link></li>
+									<Link to={footerMenuDetail.href} key={footerMenuDetail.text} title={footerMenuDetail.title} target={footerMenuDetail.target} className=" hover:nb-text-light-blue">
+									<li className="nb-text-md nb-font-medium nb-capitalize">{footerMenuDetail.text}</li>
+									</Link>
 								)})}
 							
 							</ul>
