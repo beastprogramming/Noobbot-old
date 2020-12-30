@@ -18,7 +18,7 @@ module.exports = {
                     blue: '#9accfe',
                     red: '#f7abab',
                     bunty: '#8c93d9',
-                    green: '#c0e2c7'
+                    green: '#f6ffed'
                 },
                 variants: {
                     borderWidth: ['last'],
