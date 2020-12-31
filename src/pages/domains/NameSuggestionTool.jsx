@@ -1,17 +1,23 @@
 import React, { useState, useEffect} from "react";
 
+import {useForm} from "react-hook-form";
+
 import {Link} from 'react-router-dom';
 
 function NameSuggestionTool() {
+    // Get form data form
+    const {register, handleSubmit} = useForm();
 
+    const onSubmit = (keyword) => {
+        console.log(keyword);
+    }
+    // Fetch Data From API
     const [suggestions, setSuggestions] = useState({});
-
     useEffect(() => {
-        fetch(`/api/domains/v5/suggest-names.json?auth-userid=795300&api-key=sOZ7I52D5Jx8Vtbkxfnn1PYIVoqL0D5O&keyword=himanshu`)
+        fetch(`/api/domains/v5/suggest-names.json?auth-userid=795300&api-key=sOZ7I52D5Jx8Vtbkxfnn1PYIVoqL0D5O&keyword=noobbot`)
         .then((response) => response.json())
         .then(setSuggestions);
     }, []);
-
   const suggestionArray = [];
   for (let suggestion in suggestions) {
     let status = suggestions[suggestion];
@@ -34,10 +40,10 @@ function NameSuggestionTool() {
                     </div>
 
                     <div className="nb-mb-4">
-                    <form className="nb-w-full nb-flex nb-flex-col md:nb-flex-row md:nb-items-center" action="" method="">
+                    <form className="nb-w-full nb-flex nb-flex-col md:nb-flex-row md:nb-items-center" onSubmit={handleSubmit(onSubmit)}>
                         <input
                             className="nb-rounded-l nb-w-full nb-h-16 nb-border-primary-blue focus:nb-border-primary-blue focus:nb-outline-0 nb-border-2 nb-border-r-2 md:nb-border-r-0 nb-p-2 nb-bg-transparent focus:nb-bg-transparent nb-text-primary-bunty nb-text-xl nb-mb-2 md:nb-mb-0"
-                            type="text" name="domain" placeholder="Add your keyword" autoComplete="off" />
+                            type="text" name="domain" placeholder="Add your keyword" autoComplete="off" ref={register} />
                         <input
                             className="nb-rounded-r nb-h-16 nb-border-primary-blue nb-border-2 nb-p-2 nb-text-xl nb-font-bold nb-bg-primary-blue nb-text-white nb-cursor-pointer"
                             type="submit" value="Suggest" />
