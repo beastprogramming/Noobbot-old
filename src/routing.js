@@ -30,6 +30,8 @@ import {Knowledgebase, VideoTutorials, LiveChatSupport, Blog, ContactUs, ReportA
 import {DatacenterDetails, HostingSecurity, ServerMonitoring, BackupRecovery} from './pages/footer/infrastructure/index';
 // Footer Menu Solution
 import {Domains, Hosting, Emails, Websites, Security} from './pages/footer/solutions/index';
+// Offers
+import Offers from './pages/misc/offers'
 
 // Error
 import NotFound404 from './pages/NotFound404';
@@ -103,6 +105,8 @@ function Routing() {
                 <Route exact path="/cloud" component={CloudHosting} />
                 <Route exact path="/emails" component={Emails} />
                 <Route exact path="/security-backups" component={Security} />
+                {/* Offers */}
+                <Route exact path="/offers" component={Offers} />
                 
                 <Route path="*" component={NotFound404} />
             </Switch>

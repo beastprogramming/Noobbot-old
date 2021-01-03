@@ -5,19 +5,22 @@ import {useForm} from "react-hook-form";
 import {Link} from 'react-router-dom';
 
 function NameSuggestionTool() {
+    // Create useState for keyword
+    const [keyword, setKeyword] = useState('');
+    
     // Get form data form
     const {register, handleSubmit} = useForm();
 
     const onSubmit = (keyword) => {
-        console.log(keyword);
+        setKeyword(keyword.domain);
     }
     // Fetch Data From API
     const [suggestions, setSuggestions] = useState({});
     useEffect(() => {
-        fetch(`/api/domains/v5/suggest-names.json?auth-userid=795300&api-key=sOZ7I52D5Jx8Vtbkxfnn1PYIVoqL0D5O&keyword=noobbot`)
+        fetch(`/api/domains/v5/suggest-names.json?auth-userid=795300&api-key=sOZ7I52D5Jx8Vtbkxfnn1PYIVoqL0D5O&keyword=${keyword}`)
         .then((response) => response.json())
         .then(setSuggestions);
-    }, []);
+    }, [keyword]);
   const suggestionArray = [];
   for (let suggestion in suggestions) {
     let status = suggestions[suggestion];
@@ -43,7 +46,7 @@ function NameSuggestionTool() {
                     <form className="nb-w-full nb-flex nb-flex-col md:nb-flex-row md:nb-items-center" onSubmit={handleSubmit(onSubmit)}>
                         <input
                             className="nb-rounded-l nb-w-full nb-h-16 nb-border-primary-blue focus:nb-border-primary-blue focus:nb-outline-0 nb-border-2 nb-border-r-2 md:nb-border-r-0 nb-p-2 nb-bg-transparent focus:nb-bg-transparent nb-text-primary-bunty nb-text-xl nb-mb-2 md:nb-mb-0"
-                            type="text" name="domain" placeholder="Add your keyword" autoComplete="off" ref={register} />
+                            type="text" name="domain" placeholder="Add your keyword" autoComplete="off" ref={register({ pattern: /^[A-Za-z0-9- ]+$/i , minLength:3})} />
                         <input
                             className="nb-rounded-r nb-h-16 nb-border-primary-blue nb-border-2 nb-p-2 nb-text-xl nb-font-bold nb-bg-primary-blue nb-text-white nb-cursor-pointer"
                             type="submit" value="Suggest" />
@@ -51,10 +54,11 @@ function NameSuggestionTool() {
                 </div>
                 </div>
             </section>
+            {keyword !== '' ? 
             <section className="nb-py-4">
                 <div className="nb-container">
                     <div className="nb-text-center nb-mb-4">
-                        <h2 className="nb-text-lg md:nb-text-xl lg:nb-text-2xl nb-font-medium nb-text-primary-bunty nb-mb-2">Best Domains for <span className="nb-font-bold nb-text-primary-red">youtube</span></h2>
+                        <h2 className="nb-text-lg md:nb-text-xl lg:nb-text-2xl nb-font-medium nb-text-primary-bunty nb-mb-2">Best Domains for <span className="nb-font-bold nb-text-primary-red">{keyword}</span></h2>
                     </div>
 
                     <div className="nb-grid nb-grid-cols-1 lg:nb-grid-cols-2 nb-gap-4">
@@ -72,6 +76,8 @@ function NameSuggestionTool() {
                     </div>
                 </div>
             </section>
+             :
+             null}
         </>
     )
 }
