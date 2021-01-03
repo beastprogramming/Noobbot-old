@@ -11,10 +11,13 @@ function Offers() {
         .then(setPromos);
     }, [])
 
-
     return (
         <>
-{JSON.stringify(promos)}
+        {promos.map((promo,i) => {
+            return(
+            <p key={i}>{promo.i.productkey}</p>
+            )
+        })}
         </>
     )
 }
