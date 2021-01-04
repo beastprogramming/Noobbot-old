@@ -10,12 +10,11 @@ function Offers() {
         .then((response) => response.json())
         .then(setPromos);
     }, [])
-
     return (
         <>
-        {promos.map((promo,i) => {
+        {Object.keys(promos).map((offer, i) => {
             return(
-            <p key={i}>{promo.i.productkey}</p>
+            <p key={i}>{promos[offer].productkey}</p>
             )
         })}
         </>
