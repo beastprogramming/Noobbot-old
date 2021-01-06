@@ -10,6 +10,13 @@ function Offers() {
         .then((response) => response.json())
         .then(setPromos);
     }, [])
+    // Fetch Domains Information
+    const [domainInfo, setDomainInfo] = useState({});
+    useEffect(() => {
+        fetch(`/domains.json`)
+        .then((response) => response.json())
+        .then(setDomainInfo);
+    }, [])
     return (
         <>
         {Object.keys(promos).map((offer, i) => {
