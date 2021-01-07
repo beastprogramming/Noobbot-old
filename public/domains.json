@@ -1,245 +1,251 @@
-[{
-    "domus": [{
+{
+    "domus": {
         "text": ".us"
-    }],
-    "dotcoffee": [{
+    },
+    "dotcoffee": {
         "text": ".coffee"
-    }],
-    "dotstudy": [{
+    },
+    "dotstudy": {
         "text": ".study"
-    }],
-    "dotmen": [{
+    },
+    "dotmen": {
         "text": ".men"
-    }],
-    "dotcourses": [{
+    },
+    "dotcourses": {
         "text": ".course"
-    }],
-    "dotblue": [{
+    },
+    "dotblue": {
         "text": ".blue"
-    }],
-    "dotlife": [{
+    },
+    "dotlife": {
         "text": ".life"
-    }],
-    "dotworld": [{
+    },
+    "dotworld": {
         "text": ".world"
-    }],
-    "dotparty": [{
+    },
+    "dotparty": {
         "text": ".party"
-    }],
-    "dotclick": [{
+    },
+    "dotclick": {
         "text": ".click"
-    }],
-    "dotlink": [{
+    },
+    "dotlink": {
         "text": ".link"
-    }],
-    "dotlol": [{
+    },
+    "dotlol": {
         "text": ".lol"
-    }],
-    "dotwebsite": [{
+    },
+    "dotwebsite": {
         "text": ".website"
-    }],
-    "dotspace": [{
+    },
+    "dotspace": {
         "text": ".space"
-    }],
-    "dothost": [{
+    },
+    "dothost": {
         "text": ".host"
-    }],
-    "dotpress": [{
+    },
+    "dotpress": {
         "text": ".press"
-    }],
-    "dotpw": [{
+    },
+    "dotpw": {
         "text": ".pw"
-    }],
-    "indotnet": [{
+    },
+    "indotnet": {
         "text": ".in.net"
-    }],
-    "dottoday": [{
+    },
+    "dottoday": {
         "text": ".today"
-    }],
-    "dotxyz": [{
+    },
+    "dotxyz": {
         "text": ".xyz"
-    }],
-    "dotcollege": [{
+    },
+    "dotcollege": {
         "text": ".college"
-    }],
-    "dotred": [{
+    },
+    "dothelp": {
+        "text": ".help"
+    },
+    "dotred": {
         "text": ".red"
-    }],
-    "dotguru": [{
+    },
+    "dotguru": {
         "text": ".guru"
-    }],
-    "dotkim": [{
+    },
+    "dotkim": {
         "text": ".kim"
-    }],
-    "dotpoker": [{
+    },
+    "dotpoker": {
         "text": ".poker"
-    }],
-    "dotsite": [{
+    },
+    "dotsite": {
         "text": ".site"
-    }],
-    "dotonline": [{
+    },
+    "dotonline": {
         "text": ".online"
-    }],
-    "dotphoto": [{
+    },
+    "dotphoto": {
         "text": ".photo"
-    }],
-    "dottech": [{
+    },
+    "dottech": {
         "text": ".tech"
-    }],
-    "dotmobi": [{
+    },
+    "dotmobi": {
         "text": ".mobi"
-    }],
-    "dotpics": [{
+    },
+    "dotpics": {
         "text": ".pics"
-    }],
-    "dotchristmas": [{
+    },
+    "dotchristmas": {
         "text": ".christmas"
-    }],
-    "dotpet": [{
+    },
+    "dotpet": {
         "text": ".pet"
-    }],
-    "dotarchi": [{
+    },
+    "dotarchi": {
         "text": ".archi"
-    }],
-    "dotfun": [{
+    },
+    "dotfun": {
         "text": ".fun"
-    }],
-    "dotpromo": [{
+    },
+    "dotpromo": {
         "text": ".promo"
-    }],
-    "dotski": [{
+    },
+    "dotski": {
         "text": ".ski"
-    }],
-    "dotbid": [{
+    },
+    "dotrent": {
+        "text": ".rent"
+    },
+    "dotbid": {
         "text": ".bid"
-    }],
-    "dotmom": [{
+    },
+    "dotmom": {
         "text": ".mom"
-    }],
-    "dotsexy": [{
+    },
+    "dotsexy": {
         "text": ".sexy"
-    }],
-    "dotlgbt": [{
+    },
+    "dotlgbt": {
         "text": ".lgbt"
-    }],
-    "dotco": [{
+    },
+    "dotco": {
         "text": ".co"
-    }],
-    "dotnyc": [{
+    },
+    "dotnyc": {
         "text": ".nyc"
-    }],
-    "dotsystems": [{
+    },
+    "dotsystems": {
         "text": ".systems"
-    }],
-    "dotdate": [{
+    },
+    "dotdate": {
         "text": ".date"
-    }],
-    "dotwebcam": [{
+    },
+    "dotwebcam": {
         "text": ".webcam"
-    }],
-    "dotcricket": [{
+    },
+    "dotcricket": {
         "text": ".cricket"
-    }],
-    "dotpink": [{
+    },
+    "dotpink": {
         "text": ".pink"
-    }],
-    "dotdownload": [{
+    },
+    "dotdownload": {
         "text": ".download"
-    }],
-    "dotaccountant": [{
+    },
+    "dotaccountant": {
         "text": ".accountant"
-    }],
-    "dotstore": [{
+    },
+    "dotstore": {
         "text": ".store"
-    }],
-    "dotloan": [{
+    },
+    "dotloan": {
         "text": ".loan"
-    }],
-    "dotltd": [{
+    },
+    "dotltd": {
         "text": ".ltd"
-    }],
-    "dotstream": [{
+    },
+    "dotstream": {
         "text": ".stream"
-    }],
-    "dotfaith": [{
+    },
+    "dotfaith": {
         "text": ".faith"
-    }],
-    "dotphotography": [{
+    },
+    "dotphotography": {
         "text": ".photography"
-    }],
-    "dotwin": [{
+    },
+    "dotwin": {
         "text": ".win"
-    }],
-    "dotscience": [{
+    },
+    "dotscience": {
         "text": ".science"
-    }],
-    "dotblack": [{
+    },
+    "dotblack": {
         "text": ".black"
-    }],
-    "dotbio": [{
+    },
+    "dotbio": {
         "text": ".bio"
-    }],
-    "dotgreen": [{
+    },
+    "dotgreen": {
         "text": ".green"
-    }],
-    "dottravel": [{
+    },
+    "dottravel": {
         "text": ".travel"
-    }],
-    "dotworks": [{
+    },
+    "dotworks": {
         "text": ".works"
-    }],
-    "dottrade": [{
+    },
+    "dottrade": {
         "text": ".trade"
-    }],
-    "dotracing": [{
+    },
+    "dotracing": {
         "text": ".racing"
-    }],
-    "dotemail": [{
+    },
+    "dotemail": {
         "text": ".email"
-    }],
-    "dombiz": [{
+    },
+    "dombiz": {
         "text": ".biz"
-    }],
-    "dotlive": [{
+    },
+    "dotlive": {
         "text": ".live"
-    }],
-    "dottattoo": [{
+    },
+    "dottattoo": {
         "text": ".tattoo"
-    }],
-    "dotreview": [{
+    },
+    "dotreview": {
         "text": ".review"
-    }],
-    "dominfo": [{
+    },
+    "dominfo": {
         "text": ".info"
-    }],
-    "dotsolutions": [{
+    },
+    "dotsolutions": {
         "text": ".solutions"
-    }],
-    "dotnews": [{
+    },
+    "dotnews": {
         "text": ".news"
-    }],
-    "dotpro": [{
+    },
+    "dotpro": {
         "text": ".pro"
-    }],
-    "dotninja": [{
+    },
+    "dotninja": {
         "text": ".ninja"
-    }],
-    "dotband": [{
+    },
+    "dotband": {
         "text": ".band"
-    }],
-    "dotcenter": [{
+    },
+    "dotcenter": {
         "text": ".center"
-    }],
-    "dotrocks": [{
+    },
+    "dotrocks": {
         "text": ".rocks"
-    }],
-    "dotsale": [{
+    },
+    "dotsale": {
         "text": ".sale"
-    }],
-    "dotaccountants": [{
+    },
+    "dotaccountants": {
         "text": ".accountants"
-    }],
-    "dotsocial": [{
+    },
+    "dotsocial": {
         "text": ".social"
-    }]
-}]
+    }
+}
