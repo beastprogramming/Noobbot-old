@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import Moment from 'react-moment';
 
 
 function Offers() {
@@ -32,7 +33,7 @@ function Offers() {
                 
                 {Object.keys(promos).map((offer, i) => {
                     return(
-                    <div className="nb-shadow-sm hover:nb-shadow-lg nb-rounded-t-sm nb-bg-white" key={i}>
+                    <div className="nb-shadow-sm hover:nb-shadow-lg nb-rounded-t-sm nb-bg-white" key={promos[offer].productkey}>
                         <div className="nb-p-4">
 
                             {Object.keys(domainInfo).map((di, dii) => {
@@ -42,7 +43,10 @@ function Offers() {
                                             { promos[offer].productkey === di ?(domainInfo[di].text): null }
                                         </p>
                                     )
+                                 }else{
+                                    return null
                                  }
+                               
                             })}
                             <div className="nb-pt-2 nb-flex nb-justify-between nb-border-t">
                                 <p className="nb-text-lg nb-font-bold nb-text-primary-blue">₹{promos[offer].customerprice} </p>
@@ -53,10 +57,13 @@ function Offers() {
                                                 { '₹'+domainPrice[dp].addnewdomain[1] }
                                                 </p>
                                             )
-                                   }
+                                   }else{
+                                        return null
+                                   } 
                                 })}
                                 
                             </div>
+                            <p className="nb-text-sm nb-font-bold nb-text-primary-red">Ends <Moment format="DD-MM-YYYY" unix>{promos[offer].endtime}</Moment></p>
                         </div>
                         <Link to="#" title="Apply Offer" target="_self" className="">
                             <div className="nb-p-2 nb-bg-primary-blue  nb-font-bold nb-rounded-b-sm nb-text-white nb-w-auto nb-text-center">Apply Offer</div>
