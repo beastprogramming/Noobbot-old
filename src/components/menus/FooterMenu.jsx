@@ -5,7 +5,7 @@ function FooterMenu () {
 	const [footerMenuItems, setFooterMenuItems] = useState([]);
 
 useEffect(() => {
-fetch(`./footermenu.json`)
+fetch(`/data/footermenu.json`)
 	.then((response) => response.json())
 	.then(setFooterMenuItems);
 }, []);

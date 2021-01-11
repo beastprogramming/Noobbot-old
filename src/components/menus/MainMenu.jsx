@@ -13,7 +13,7 @@ function MainMenu() {
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
-    fetch(`./mainmenu.json`)
+    fetch(`/data/mainmenu.json`)
       .then((response) => response.json())
       .then(setMenuItems);
   }, []);

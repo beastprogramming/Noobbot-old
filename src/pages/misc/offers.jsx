@@ -21,7 +21,7 @@ function Offers() {
     // Fetch Domains Information
     const [domainInfo, setDomainInfo] = useState({});
     useEffect(() => {
-        fetch(`/domains.json`)
+        fetch(`/data/domains.json`)
         .then((response) => response.json())
         .then(setDomainInfo);
     }, [])

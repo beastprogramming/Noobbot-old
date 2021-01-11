@@ -8,12 +8,12 @@ function LinuxSharedHosting() {
             <div className="nb-container nb-p-4">
                 <ul className="nb-flex nb-items-center nb-justify-center">
                     <li className="nb-flex nb-items-center nb-border-2 nb-border-r nb-border-primary-blue nb-py-2 nb-px-6 nb-bg-primary-blue nb-text-white hover:nb-bg-primary-blue hover:nb-text-white nb-cursor-pointer nb-font-bold"><img className="nb-mr-1 nb-h-6" src="/images/flag/ind.svg" alt="India Flag" />India</li>
-                    <li className="nb-flex nb-items-center nb-border-2 nb-border-l nb-border-r nb-border-primary-blue nb-py-2 nb-px-6 nb-text-primary-blue hover:nb-bg-primary-blue hover:nb-text-white nb-cursor-pointer nb-font-bold"><img className="nb-mr-1 nb-h-6" src="/images/flag/usa.svg" alt="USA Flag" />USA</li>
+                    <li className="nb-flex nb-items-center nb-border-2 nb-border-l nb-border-r nb-border-primary-blue nb-py-2 nb-px-6 nb-text-primary-blue hover:nb-bg-primary-blue hover:nb-text-white nb-cursor-pointer nb-font-bold"><img className="nb-mr-1 nb-h-6" src="/images/flag/usa.svg" alt="USA Flag" />USA (Texas)</li>
                     <li className="nb-flex nb-items-center nb-border-2 nb-border-l nb-border-r nb-border-primary-blue nb-py-2 nb-px-6 nb-text-primary-blue hover:nb-bg-primary-blue hover:nb-text-white nb-cursor-pointer nb-font-bold"><img className="nb-mr-1 nb-h-6" src="/images/flag/uk.svg" alt="UK Flag" />United Kingdom</li>
                     <li className="nb-flex nb-items-center nb-border-2 nb-border-l nb-border-primary-blue nb-py-2 nb-px-6 nb-text-primary-blue hover:nb-bg-primary-blue hover:nb-text-white nb-cursor-pointer nb-font-bold"><img className="nb-mr-1 nb-h-6" src="/images/flag/hk.svg" alt="Hong Kong Flag" />Hong Kong</li>
                 </ul>
                 <div className="">
-                    <p className="nb-text-md lg:nb-text-xl nb-font-semibold nb-text-primary-bunty nb-tracking-wide nb-my-6 nb-text-center">Best suited for visitors from US & world over</p>
+                    <p className="nb-text-md lg:nb-text-xl nb-font-semibold nb-text-primary-bunty nb-tracking-wide nb-my-6 nb-text-center">Best suited for visitors from India, South & Central Asia</p>
 
                     <div className="nb-grid nb-grid-cols-4 nb-gap-4">
                         
