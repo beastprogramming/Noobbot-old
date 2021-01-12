@@ -58,10 +58,13 @@ module.exports = {
         },
         fontFamily: {
             'sans': ['Montserrat', 'sans-serif'],
-        }
+        },
+
 
     },
-    variants: {},
+    variants: {
+        borderWidth: ['hover'],
+    },
     plugins: [
         plugin(function({ addComponents }) {
             const buttons = {

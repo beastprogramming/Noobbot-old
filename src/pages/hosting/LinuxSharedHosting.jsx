@@ -1,10 +1,15 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+import PageHeader from "../../components/hero/PageHeroOne";
+import DomainCTA from "../../components/cta/DomainRegisterCTA";
+import ProductFeatureImage from "../../components/features/ProductFeatureImage";
 function LinuxSharedHosting() {
     return(
         <>
-        <section className="nb-py-8 nb-bg-gray-100">
+        <PageHeader />
+        <DomainCTA />
+        <section className="nb-py-8">
             <div className="nb-container nb-p-4">
                 <ul className="nb-flex nb-items-center nb-justify-center">
                     <li className="nb-flex nb-items-center nb-border-2 nb-border-r nb-border-primary-blue nb-py-2 nb-px-6 nb-bg-primary-blue nb-text-white hover:nb-bg-primary-blue hover:nb-text-white nb-cursor-pointer nb-font-bold"><img className="nb-mr-1 nb-h-6" src="/images/flag/ind.svg" alt="India Flag" />India</li>
@@ -151,11 +156,13 @@ function LinuxSharedHosting() {
 
                     </div>
                 
-                    <p className="nb-text-md lg:nb-text-xl nb-font-semibold nb-text-primary-bunty nb-tracking-wide nb-my-6 nb-text-center">If not satisfied, get your money back by cancelling within 30 days</p>
+                    <p className="nb-text-md lg:nb-text-xl nb-font-semibold nb-text-primary-bunty nb-tracking-wide nb-mt-6 nb-text-center">If not satisfied, get your money back by cancelling within 30 days</p>
                 
                 </div>
             </div>
         </section>
+
+        <ProductFeatureImage />
         </>
     )
 }
