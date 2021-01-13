@@ -18,7 +18,7 @@ function ProductFeatureImage(){
                             and administer user accounts.</p>
                             <h4 className="nb-text-lg nb-font-semibold nb-mb-2">Tailored to your needs</h4>
                         <p className="nb-text-lg  nb-leading-relaxed nb-text-justify nb-mb-4">Is your project growing fast? If necessary, you can easily change your VPS package in the administration panel - just a few clicks.</p>
-                            <Link to="#" className="nb-transition nb-duration-100 nb-ease-in-out nb-text-lg nb-font-semibold nb-text-primary-blue  nb-border-b-0 hover:nb-border-b-2 hover:nb-border-primary-red">View Linux KVM VPS <i class="las la-arrow-right nb-ml-1"></i></Link>
+                            <Link to="#" className="nb-transition nb-duration-100 nb-ease-in-out nb-text-lg nb-font-semibold nb-text-primary-blue  nb-border-b-0 hover:nb-border-b-2 hover:nb-border-primary-red">View Linux KVM VPS <i className="las la-arrow-right nb-ml-1"></i></Link>
 
                     </div>
                     <div className="nb-order-2 nb-col-span-1">
