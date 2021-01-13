@@ -63,7 +63,10 @@ module.exports = {
 
     },
     variants: {
-        borderWidth: ['hover'],
+        extend: {
+            borderWidth: ['hover'],
+            display: ['group-hover'],
+        }
     },
     plugins: [
         plugin(function({ addComponents }) {

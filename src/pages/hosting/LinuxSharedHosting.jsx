@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import PageHeader from "../../components/hero/PageHeroOne";
 import DomainCTA from "../../components/cta/DomainRegisterCTA";
 import ProductFeatureImage from "../../components/features/ProductFeatureImage";
+import RelatedPricing from "../../components/pricing/RelatedProducts";
 function LinuxSharedHosting() {
     return(
         <>
@@ -163,6 +164,7 @@ function LinuxSharedHosting() {
         </section>
 
         <ProductFeatureImage />
+        <RelatedPricing />
         </>
     )
 }
