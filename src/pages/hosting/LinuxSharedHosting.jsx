@@ -6,6 +6,12 @@ import DomainCTA from "../../components/cta/DomainRegisterCTA";
 import ProductFeatureImage from "../../components/features/ProductFeatureImage";
 import RelatedPricing from "../../components/pricing/RelatedProducts";
 function LinuxSharedHosting() {
+    let feature1 = [
+        {
+        title: "Linux",
+        description: "Linux description"
+    }
+]
     return(
         <>
         <PageHeader />
@@ -163,7 +169,7 @@ function LinuxSharedHosting() {
             </div>
         </section>
 
-        <ProductFeatureImage  title="Linux KVM VPS" image="https://home.pl/img/home/base/pages/serwery/servers-servers.png" path="#"/>
+        <ProductFeatureImage  title="Linux KVM VPS" image="https://home.pl/img/home/base/pages/serwery/servers-servers.png" path="#" features={feature1}/>
         <RelatedPricing />
         </>
     )
