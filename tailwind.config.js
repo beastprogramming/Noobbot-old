@@ -66,6 +66,7 @@ module.exports = {
         extend: {
             borderWidth: ['hover'],
             display: ['group-hover'],
+            backgroundColor: ['hover'],
         }
     },
     plugins: [

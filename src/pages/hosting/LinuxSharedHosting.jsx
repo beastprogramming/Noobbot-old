@@ -163,7 +163,7 @@ function LinuxSharedHosting() {
             </div>
         </section>
 
-        <ProductFeatureImage />
+        <ProductFeatureImage  title="Linux KVM VPS" image="https://home.pl/img/home/base/pages/serwery/servers-servers.png" path="#"/>
         <RelatedPricing />
         </>
     )
