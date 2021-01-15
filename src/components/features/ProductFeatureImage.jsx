@@ -10,11 +10,11 @@ function ProductFeatureImage(props){
                 <div className="nb-grid nb-grid-cols-1 lg:nb-grid-cols-3 nb-gap-4">
                     <div className={`${props.order === "left" ? "nb-order-2" : "nb-order-1" } nb-col-span-2`}>
                         <h2 className="nb-text-lg md:nb-text-1xl lg:nb-text-2xl nb-font-medium nb-text-primary-bunty nb-mb-4">{props.title}</h2>
-                        {props.features.map((feature) => (
-                            <>
+                        {props.features.map((feature, index) => (
+                            <div key={index}>
                                 <h4 className="nb-text-lg nb-font-semibold nb-mb-2">{feature.title}</h4>
                                 <p className="nb-text-lg nb-text-justify nb-mb-4">{feature.description}</p>
-                            </>
+                            </div>
                         ))}
                         <Link to={props.path} className="nb-transition nb-duration-100 nb-ease-in-out nb-text-sm nb-font-bold nb-text-primary-blue nb-border-b-2 hover:nb-border-b-4 nb-border-primary-red">{props.pathTitle}</Link>
 

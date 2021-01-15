@@ -5,15 +5,7 @@ function PricingStandard(props) {
   return (
     <>
       <section className="nb-py-4">
-        <div className="nb-container nb-my-4 md:nb-my-8 lg:nb-my-16">
-          <div className="nb-text-center nb-my-4 md:nb-my-8 lg:nb-my-12">
-            <h3 className="nb-text-3xl lg:nb-text-5xl nb-font-bold nb-text-primary-bunty nb-tracking-wide">
-              {props.title}
-            </h3>
-            <h4 className="nb-text-xl lg:nb-text-3xl nb-font-semibold nb-text-primary-blue nb-tracking-wide">
-              {props.subtitle}
-            </h4>
-          </div>
+        <div className="nb-container nb-my-2 md:nb-my-4 lg:nb-my-8">
           <div className="nb-grid nb-grid-cols-1 md:nb-grid-cols-2 lg:nb-grid-cols-4 nb-gap-4">
             {props.pricings.map((pricing, index) => (
 
@@ -28,14 +20,14 @@ function PricingStandard(props) {
                   {pricing.features.map((feature, index) => (
 
                     <li key={index} className="pricing-icon-tick nb-text-lg nb-text-primary-bunty">
-                      <p className="nb-text-sm">{feature}</p>
+                      <p className="nb-text-sm">{feature.text}</p>
                     </li>
 
                   ))}
                   
                 </ul>
                 <h2 className="nb-text-sm nb-font-semibold nb-text-primary-blue nb-text-center nb-opacity-75">
-                  Starting From
+                  {pricing.priceText}
                 </h2>
                 <h1 className="nb-mb-4 nb-text-3xl nb-font-semibold nb-text-primary-blue nb-text-center">
                   <span className="nb-text-xl">₹</span>
