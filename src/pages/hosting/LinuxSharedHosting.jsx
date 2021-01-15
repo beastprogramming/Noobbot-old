@@ -95,10 +95,6 @@ function LinuxSharedHosting() {
       {
           question:"Who do I get in touch with if I need help?",
           answer:'Our Support team is always at hand to assist you. You can take a look at all our contact details <a href="#">here</a> .'
-      },
-      {
-          question:"",
-          answer:""
       }
   ];
   return (

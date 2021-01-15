@@ -8,10 +8,22 @@ import TestimonialOne from './components/testimonials/TestimonialOne';
 
 
 function App() {
+
+  let pricingTable = [
+    {
+      title: 'Get your business online today',
+      subtitle: '99% uptime for rock-solid performance',
+      pricing: 
+        {
+          
+        }
+    }
+  ]
+  console.log(pricingTable);
   return (
     <div className="App">
       <DomainHero />
-      <PricingStandard />
+      <PricingStandard title={pricingTable.title} subtitle={pricingTable.subtitle} pricings={pricingTable.pricing} />
       <CTAOffer />
       <FeatureWithIconOne />
       <ProductWithImage />
