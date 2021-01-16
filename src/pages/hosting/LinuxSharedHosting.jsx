@@ -33,11 +33,20 @@ function LinuxSharedHosting() {
 ];
 let tabPricing = [{
   title: "Best suited for visitors from India, South & Central Asia"
+},
+{
+  title: "Best suited for visitors from US & world over"
+},
+{
+  title: "Best suited for visitors from Europe"
+},
+{
+  title: "Best suited for visitors from China & East Asia"
 }];
 let pricingsTable =  [
   {
     title: 'Shared Hosting',
-    subtitle: 'WHMCS Free',
+    subtitle: 'Free SSL',
     features:[
         {text:"99.9% Uptime"},
         {text:"99.9% Uptime"},
@@ -48,7 +57,7 @@ let pricingsTable =  [
       path:"#"
   },
   {
-    title: 'Shared Hosting',
+    title: 'Reseller Hosting',
     subtitle: 'WHMCS Free',
     features:[
         {text:"99.9% Uptime"},
@@ -56,7 +65,7 @@ let pricingsTable =  [
         {text:"99.9% Uptime"}
       ],
       priceText: "Starting from",
-      price: "120",
+      price: "212",
       path:"#"
   }
 ]
@@ -154,7 +163,9 @@ let pricingsTable =  [
       <PageHeader />
       <DomainCTA />
       <PricingTabs tabLists={pricingLists} tabContents={tabPricing}>
-        <PricingStandard pricings={pricingsTable}/>
+        <div><PricingStandard pricings={pricingsTable}/></div>
+        <div><PricingStandard pricings={pricingsTable}/></div>
+        <div><PricingStandard pricings={pricingsTable}/></div>
       </PricingTabs>
 
       <ProductFeatureImage
