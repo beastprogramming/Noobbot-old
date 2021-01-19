@@ -13,7 +13,7 @@ function TopMenu() {
           <Link to="/" className="logo nb-px-2 lg:nb-px-8 nb-py-2 flex">
             {/* <img
               className="nb-h-8"
-              src="./images/logoColored.svg"
+              src="/images/logoColored.svg"
               alt="Noobbot Logo"
             /> */}
             

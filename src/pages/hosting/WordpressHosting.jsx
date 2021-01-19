@@ -5,6 +5,9 @@ import DomainCTA from "../../components/cta/DomainRegisterCTA";
 import PricingTabs from "../../components/tabs/pricingTabs";
 import PricingStandard from "../../components/pricing/PricingStandard";
 import FeatureIncluded from "../../components/features/FeatureWithIconTwo";
+import WordPressFeatureLists from "../../components/features/FeatureWithImageAndLists";
+import Faq from "../../components/faq/FaqOne";
+
 
 let featureIncluded = [
   {
@@ -66,7 +69,7 @@ let tabPricing = [
 ];
 let pricingsTableTab1 = [
   {
-    title: "SDH-India",
+    title: "Starter Lite",
     subtitle: "Free SSL",
     features: [
       { text: "99.9% Uptime" },
@@ -92,6 +95,91 @@ let pricingsTableTab2 = [
     path: "#",
   },
 ];
+let wordPressFeatureLists = [{
+  title:"WordPress powers 27% of websites on the Internet",
+  description:"Build anything - a blog, a static website or an ecommerce shop",
+  features: [
+    {
+    title:"Ready-made Themes",
+    description:"Choose from over 25,000+ themes available for any type of business, portfolio, or blog.",
+    icon:"/images/icons/themes.svg",
+    alt:""
+  },
+  {
+    title:"SEO-friendly",
+    description:"With pre-integrated SEO friendly module, drive maximum traffic to your site through search engines.",
+    icon:"/images/icons/seo.svg",
+    alt:""
+  },
+  {
+    title:"Diversified Plugins",
+    description:"Add features to your websites by installing plugins in a few clicks.",
+    icon:"/images/icons/plugins.svg",
+    alt:""
+  },
+  {
+    title:"Mobile Compatible",
+    description:"Create and even edit your site on any mobile device seamlessly.",
+    icon:"/images/icons/mobile-compatible.svg",
+    alt:""
+  }
+]
+}];
+
+let faqs = [
+  {
+    question: "Can I upgrade my WordPress Hosting plan?",
+    answer:
+      "No, You cannot change upgrade or downgrade plans, however the amount of RAM and CPU cores for your plan can be upgraded.",
+  },
+  {
+    question: "Can I add more WordPress installations to an existing plan?",
+    answer:
+      "No, you cannot add more WordPress installations to any plan. The number of WordPress installations will remain fixed.",
+  },
+  {
+    question: "Can SiteLock and CodeGuard packages be upgraded?",
+    answer: "Currently, the included SiteLock and CodeGuard plans cannot be upgraded.",
+  },
+  {
+    question: "Can I use an external email service with WordPress Hosting?",
+    answer:
+      "Yes, you can use any 3rd party email service for your domain. In case you are using the default name servers provided with WordPress Hosting, please contact our Support team to update the relevant DNS records for your blog.",
+  },
+  {
+    question: "Can I use an existing certificate with my blog?",
+    answer:
+      "No, you cannot use an existing certificate. You will need to generate a CSR from the WordPress Hosting panel and get a certificate issued which can be installed from the panel.",
+  },
+  {
+    question: "Will WordPress be updated automatically?",
+    answer: "Yes, WordPress core updates will be enabled by default.",
+  },
+  {
+    question: "Is there a money back period for WordPress Hosting?",
+    answer: "No, WordPress Hosting does not have a money back period.",
+  },
+  {
+    question: "Is Multisite supported with WordPress Hosting?",
+    answer:
+      'No, Multisite is not supported.',
+  },
+  {
+    question: "Can I access the cPanel for my hosting plan?",
+    answer:
+      "No, cPanel access is not provided with WordPress Hosting.",
+  },
+  {
+    question: "Is an SSL Certificate included with the plan?",
+    answer:
+      'Yes. When you purchase a WordPress Hosting order, Free SSL powered by Let\'s Encrypt, is automatically generated and installed for all domains associated with the package',
+  },
+  {
+    question: 'What is the difference between "WordPress Hosting" and "WordPress Hosting + Security Suite" plans?',
+    answer:
+      "WordPress Hosting plans are economical plans without automatic backups and anti-malware. WordPress Hosting + Security plans have the same specifications as that of the WordPress hosting plans, including automatic cloud backups and anti-malware at a cost difference.",
+  }
+];
 
 function WordpressHosting() {
   return (
@@ -116,6 +204,9 @@ function WordpressHosting() {
         title="It just works Auto-magically"
         features={featureIncluded}
       />
+      <WordPressFeatureLists title={wordPressFeatureLists[0].title} description={wordPressFeatureLists[0].description} features={wordPressFeatureLists[0].features}/>
+      <Faq faqs={faqs} />
+
     </>
   );
 }
