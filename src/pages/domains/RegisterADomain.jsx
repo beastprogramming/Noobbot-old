@@ -8,6 +8,50 @@ import FAQ from '../../components/faq/FaqOne';
 
 
 function RegisterADomain() {
+    let whyFeatures = [
+        {
+            title: "Why should you get your domain through Noobbot?",
+            subTitle: "There are seven reasons for you to choose Noobbot for your business domain name.",
+            features: [
+                {
+                    title: "Free Email Account",
+                    description: "Receive 2 personalized Email Addresses such as mail@yourdomain.com with free fraud, spam and virus protection.",
+                    icon: "las la-envelope-open"
+                },
+                {
+                    title: "Domain Forwarding",
+                    description: "Point your domain name to another website for free! Redirect users when they type your domain name into a browser (with/without domain masking & SEO)",
+                    icon: "las la-globe-asia"
+                },
+                {
+                    title: "DNS Management",
+                    description: "Free lifetime DNS service which allows you to manage your DNS records on our globally distributed and highly redundant DNS infrastructure.",
+                    icon: "las la-terminal"
+                },
+                {
+                    title: "Domain Theft Protection",
+                    description: "Protect your Domain from being transferred out accidentally or without your permission with our free Domain Theft Protection.",
+                    icon: "las la-lock"
+                },
+                {
+                    title: "Free Mail Forwards",
+                    description: "Create free email forwards and automatically redirect your email to existing email accounts.",
+                    icon: "las la-mail-bulk"
+                },
+                {
+                    title: "Easy to use Control Panel",
+                    description: "Use our intuitive Control Panel to manage your domain name, configure email accounts, renew your domain name and buy more services.",
+                    icon: "las la-cog"
+                },
+                {
+                    title: "Bulk Tools",
+                    description: "Easy-to-use bulk tools to help you Register, Renew, Transfer and make other changes to several Domain Names in a single step.",
+                    icon: "las la-tools"
+                }
+            ]
+
+        }
+    ]
     let faq = [
         {
             question:"What is Shared Web hosting?",
@@ -54,7 +98,7 @@ function RegisterADomain() {
         <>
             <DomainRegisterHero />
             <DomainTldOffer />
-            <WhyNoobbotForDomain />
+            <WhyNoobbotForDomain image={false} title={whyFeatures[0].title} subTitle={whyFeatures[0].subTitle} features={whyFeatures[0].features}/>
             <Tools />
             <FAQ faqs={faq}/>
         </>

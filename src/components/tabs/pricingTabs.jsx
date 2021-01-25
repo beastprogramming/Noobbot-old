@@ -35,12 +35,16 @@ function PricingTabs(props){
                 ))}
                     
                 <p className="nb-text-md lg:nb-text-xl nb-font-semibold nb-text-primary-bunty nb-tracking-wide nb-mt-6 nb-text-center">
-                If not satisfied, get your money back by cancelling within 30 days
+                {props.bottomText}
                 </p>
                 </div>
             </section>
         </>
     )
+}
+
+PricingTabs.defaultProps = {
+    bottomText: "If not satisfied, get your money back by cancelling within 15 Days"
 }
 
 export default PricingTabs;

@@ -9,7 +9,7 @@ import App from './App';
 // Domains
 import {RegisterADomain, NewDomainExtension, NameSuggestionTool, WhoisLookup} from './pages/domains/index';
 // Hosting
-import {LinuxSharedHosting, WindowsSharedHosting, CloudHosting, DrupalHosting, JoomlaHosting, WordpressHosting} from './pages/hosting/index';
+import {LinuxSharedHosting, WindowsSharedHosting, CloudHosting, LinuxResellerHosting, WindowsResellerHosting, WordpressHosting} from './pages/hosting/index';
 // VPS
 import {LinuxVpsServer} from './pages/vps/index';
 // Cloud
@@ -51,8 +51,8 @@ function Routing() {
                 <Route exact path="/hosting/linux-shared-hosting" component={LinuxSharedHosting} />
                 <Route exact path="/hosting/windows-shared-hosting" component={WindowsSharedHosting} />
                 <Route exact path="/hosting/cloud-hosting" component={CloudHosting} />
-                <Route exact path="/hosting/drupal-hosting" component={DrupalHosting} />
-                <Route exact path="/hosting/joomla-hosting" component={JoomlaHosting} />
+                <Route exact path="/hosting/linux-reseller-hosting" component={LinuxResellerHosting} />
+                <Route exact path="/hosting/windows-reseller-hosting" component={WindowsResellerHosting} />
                 <Route exact path="/hosting/wordpress-hosting" component={WordpressHosting} />
                 {/* Main VPS  */}
                 <Route exact path="/vps/linux-vps-server" component={LinuxVpsServer} />

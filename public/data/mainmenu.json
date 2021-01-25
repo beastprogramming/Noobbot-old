@@ -70,19 +70,19 @@
             },
             {
 
-                "name": "Drupal Hosting",
-                "description": "A secure, reliable and powerful platform crafted for Drupal",
-                "href": "/hosting/drupal-hosting",
-                "title": "Drupal Hosting",
-                "icon": "lab la-drupal"
+                "name": "Linux Reseller Hosting",
+                "description": "Start your hosting business today. Comes with free WHM, cPanel and WHMCS",
+                "href": "/hosting/linux-reseller-hosting",
+                "title": "Linux Reseller Hosting",
+                "icon": "lab la-linux"
             },
             {
 
-                "name": "Joomla Hosting",
-                "description": "A secure, reliable and powerful platform crafted for Joomla",
-                "href": "/hosting/joomla-hosting",
-                "title": "Joomla Hosting",
-                "icon": "lab la-joomla"
+                "name": "Windows Reseller Hosting",
+                "description": "Start your hosting business today. Comes with free Plesk and WHMCS",
+                "href": "/hosting/windows-reseller-hosting",
+                "title": "Windows Reseller Hosting",
+                "icon": "lab la-windows"
             },
             {
 

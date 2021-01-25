@@ -66,7 +66,7 @@ function Offers() {
                             <p className="nb-text-sm nb-font-bold nb-text-primary-red">Ends <Moment format="DD-MM-YYYY" unix>{promos[offer].endtime}</Moment></p>
                         </div>
                         <Link to="#" title="Apply Offer" target="_self" className="">
-                            <div className="nb-p-2 nb-bg-primary-blue  nb-font-bold nb-rounded-b-sm nb-text-white nb-w-auto nb-text-center">Apply Offer</div>
+                            <div className="nb-p-2 nb-bg-primary-blue hover:nb-bg-primary-bunty  nb-font-bold nb-rounded-b-sm nb-text-white nb-w-auto nb-text-center">Apply Offer</div>
                         </Link>
                     </div>
                     )

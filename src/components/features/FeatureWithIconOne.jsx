@@ -8,6 +8,7 @@ function FeatureWithIconOne(){
                 <div className="nb-grid nb-grid-cols-1">
                     <div className="pl-4">
                         <h2 className="nb-text-2xl md:nb-text-3xl lg:nb-text-4xl nb-text-primary-bunty nb-font-bold italic">Why choose Noobbot to help you get started with hosting?</h2>
+                        <div className="header-bar"></div>
                     </div>
                 </div>
                 <div className="nb-grid nb-grid-cols-1 md:nb-grid-cols-2 lg:nb-grid-cols-4 nb-my-8">

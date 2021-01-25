@@ -80,6 +80,57 @@ li.pricing-icon-tick:before{
 
 /* Forms Field */
 
+/* Heading Supporter */
+.header-bar {
+  @apply nb-bg-primary-red;
+  height: 5px;
+  width: 100px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px auto 20px 0;
+}
+.header-bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: #fff;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: MOVE-BG;
+  animation-name: MOVE-BG;
+}
+@-webkit-keyframes MOVE-BG {
+  from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0)
+  }
+
+  to {
+      -webkit-transform: translateX(85px);
+      transform: translateX(85px)
+  }
+}
+
+@keyframes MOVE-BG {
+  from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0)
+  }
+
+  to {
+      -webkit-transform: translateX(85px);
+      transform: translateX(85px)
+  }
+}
 /* Card Slider */
 div.swiper-button-prev:after{
   content: 'prev';

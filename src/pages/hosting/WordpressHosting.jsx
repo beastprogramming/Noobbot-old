@@ -6,7 +6,9 @@ import PricingTabs from "../../components/tabs/pricingTabs";
 import PricingStandard from "../../components/pricing/PricingStandard";
 import FeatureIncluded from "../../components/features/FeatureWithIconTwo";
 import WordPressFeatureLists from "../../components/features/FeatureWithImageAndLists";
+import NegativeIconFeature from "../../components/features/NegativeIconFeature"
 import Faq from "../../components/faq/FaqOne";
+import RelatedPricing from "../../components/pricing/RelatedProducts";
 
 
 let featureIncluded = [
@@ -125,6 +127,38 @@ let wordPressFeatureLists = [{
   }
 ]
 }];
+let negativeIconFeature = [
+  {
+    title:"Your WordPress Site - powered by our Cloud Hosting",
+    description:"",
+    features: [
+      {
+        title:"Blazing-Fast Load Time",
+        description:"With top-of-the-line hardware and caching - which stores your site’s most used pages, and a globally distributed CDN, your site is served upto 2x faster.",
+        icon:"/images/icons/fast.svg",
+        alt:""
+      },
+      {
+        title:"Instant Scaling",
+        description:"No need to move your hosting as your traffic grows. Ramp up your resources at the click of a button - instantly add RAM and CPU without a reboot.",
+        icon:"/images/icons/scaling.svg",
+        alt:""
+      },
+      {
+        title:"Your Data - Safeguarded",
+        description:"Our industry-leading Ceph-based storage system stores your website data across 3 distinct devices to ensure redundancy and safety.",
+        icon:"/images/icons/safeguard.svg",
+        alt:""
+      },
+      {
+        title:"Automatic Failover",
+        description:"If we detect a hardware issue, we automatically move your site to another server, ensuring that your site is always up and you never lose traffic.",
+        icon:"/images/icons/failover.svg",
+        alt:""
+      }
+    ]
+  }
+]
 
 let faqs = [
   {
@@ -181,6 +215,20 @@ let faqs = [
   }
 ];
 
+let relatedProducts = [
+  {
+    bannerImage:
+      "https://home.pl/img/cms/f0ab6787-f1dd-47e0-b621-313323796ad4/office-365-business-medium.jpg",
+    icon:
+      "https://home.pl/img/cms/75d8d722-fdca-4446-b08b-0c2d73d24885/office-365-logo-fluent-design.png",
+    title: "Google Workspace Business Standard",
+    subTitle: "Dawniej G Suite Business - aplikacje biurowe od Google",
+    price: "800",
+    uom: "per month",
+    path: "#",
+  },
+];
+
 function WordpressHosting() {
   return (
     <>
@@ -205,7 +253,9 @@ function WordpressHosting() {
         features={featureIncluded}
       />
       <WordPressFeatureLists title={wordPressFeatureLists[0].title} description={wordPressFeatureLists[0].description} features={wordPressFeatureLists[0].features}/>
+      <NegativeIconFeature title={negativeIconFeature[0].title} description={negativeIconFeature[0].description} features={negativeIconFeature[0].features }/>
       <Faq faqs={faqs} />
+      <RelatedPricing products={relatedProducts} />
 
     </>
   );
