@@ -261,6 +261,7 @@ function WindowsSharedHosting() {
       return (
         <>
           <PageHeader 
+          bgColor={"green"}
           title={"Windows Shared Hosting - At it's Simplest Best"}
           mark= {"Get your Business Online in an Affordable way"}
           description={"Perfect for a Basic Website or A Complex Ecommerce Website. It is power-packed with features and versatile on applications"}

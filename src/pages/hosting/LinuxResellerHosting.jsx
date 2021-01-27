@@ -233,6 +233,7 @@ function LinuxResellerHosting() {
   return (
     <>
       <PageHeader
+        bgColor={"red"}
         title={"Powerful Linux Reseller Hosting"}
         mark={"Now with FREE SSL & Free WHMCS"}
         description={"Cheap Unlimited Reseller Hosting"}

@@ -165,6 +165,7 @@ function CloudHosting() {
   return (
     <>
       <PageHeader
+        bgColor={"pink"}
         title={"Simplicity of Shared Hosting with the Power of Cloud"}
         mark={"Full SSD servers"}
         description={"Scales with your traffic"}

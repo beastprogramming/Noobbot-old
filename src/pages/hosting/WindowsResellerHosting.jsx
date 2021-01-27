@@ -226,6 +226,7 @@ function WindowsResellerHosting() {
           return (
             <>
               <PageHeader
+                bgColor={"indigo"}
                 title={"Rock Solid Windows Reseller Hosting"}
                 mark={"Now with FREE SSL & Free WHMCS"}
                 description={"Start Your Own Hosting Company Today."}

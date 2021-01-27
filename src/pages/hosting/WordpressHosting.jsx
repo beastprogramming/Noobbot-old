@@ -233,6 +233,7 @@ function WordpressHosting() {
   return (
     <>
       <PageHeader
+        bgColor={"yellow"}
         title={"WordPress powered by Noobbot Cloud Hosting"}
         mark={"Free SSL Certificate"}
         description={

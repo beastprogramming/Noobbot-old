@@ -8,7 +8,7 @@
 
 /* Base */
 ::selection {
-  @apply nb-bg-primary-blue nb-text-white;
+  @apply nb-bg-primary-red nb-text-white;
 }
 
 
@@ -131,24 +131,28 @@ li.pricing-icon-tick:before{
       transform: translateX(85px)
   }
 }
-/* Card Slider */
-div.swiper-button-prev:after{
-  content: 'prev';
+/* Required BG Color */
+
+.bg-red-50{
+  @apply nb-bg-red-50;
 }
-div.swiper-button-next:after {
-  content: 'next';
+
+.bg-green-50{
+  @apply nb-bg-green-50;
 }
-div.swiper-button-prev:after,div.swiper-button-next:after {
-  @apply nb-text-primary-blue;
-  font-weight: 800;
-  font-size: 21px;
-  z-index: 10;
+
+.bg-yellow-50{
+  @apply nb-bg-yellow-50;
 }
-.swiper-slide-next {
-  transform: scale(1.1);
-  transition: all .5s ease-in-out;
-  z-index: 10;
+
+.bg-purple-50{
+  @apply nb-bg-purple-50;
 }
-.swiper-slide {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+.bg-indigo-50{
+  @apply nb-bg-indigo-50;
+}
+
+.bg-pink-50{
+  @apply nb-bg-pink-50;
 }

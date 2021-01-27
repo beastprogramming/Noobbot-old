@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function PageHeroOne(props) {
   return (
     <>
-      <section className="nb-py-4">
+      <section className={`py-12 nb-bg-${props.bgColor}-50`}>
         <div className="nb-container">
           <div className="nb-flex nb-items-center nb-flex-col lg:nb-flex-row">
             <div className="nb-w-full lg:nb-w-3/5 nb-mb-4 lg:nb-mb-0 lg:nb-mr-2 nb-p-2">
@@ -36,5 +36,7 @@ function PageHeroOne(props) {
     </>
   );
 }
-
+PageHeroOne.defaultProps = {
+  bgColor: "blue"
+}
 export default PageHeroOne;

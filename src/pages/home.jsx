@@ -75,7 +75,7 @@ function Home() {
           <ProductFeatureImage
         order={"right"}
         title={"Linux KVM VPS"}
-        image={"https://home.pl/img/home/base/pages/serwery/servers-servers.png"}
+        image={"/images/pages/Linux VPS.png"}
         path={"#"}
         pathTitle={"View Linux KVM VPS"}
         features={feature1}
@@ -93,7 +93,7 @@ function Home() {
       <ProductFeatureImage
         order={"right"}
         title={"One click to start building your website"}
-        image={"https://home.pl/img/home/base/pages/hosting/cms.png"}
+        image={"/images/pages/WordPress Hosting.png"}
         path={"#"}
         pathTitle={"Find out more"}
         features={feature3}
